@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torque Release Technique Chiropractic | Lee's Summit, MO | Essential Chiropractic</title>
+  <meta name="description" content="Certified Torque Release Technique (TRT) chiropractic care in Lee's Summit, MO. The most researched, gentle, and specific chiropractic technique available. Book online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--blue-deep); letter-spacing: -0.01em; }
+    .nav-logo-name span { color: var(--blue-brand); }
+    .nav-logo-sub { font-size: 11px; font-weight: 400; color: var(--text-light); letter-spacing: 0.07em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+
+    /* SHARED */
+    section { padding: 100px 32px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .section-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    h2.section-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 20px; }
+    .section-desc { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; max-width: 560px; }
+    .btn-ghost-dark { border: 1.5px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 32px; border-radius: 8px; font-size: 15px; font-weight: 500; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s; }
+    .btn-ghost-dark:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(to bottom, rgba(8,20,46,0.68) 0%, rgba(8,20,46,0.58) 100%), url('https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Essential%20Chiropractic%20Softwave%20Treatment%20lees%20summit%2023.jpeg') center/cover no-repeat; padding: 140px 32px 100px; position: relative; overflow: hidden; text-align: center; }
+    .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .page-hero::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .page-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+    .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 24px; }
+    .page-hero-eyebrow span { display: inline-block; width: 24px; height: 1px; background: var(--blue-brand); }
+    .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .page-hero h1 em { font-style: italic; color: #7EC4F4; }
+    .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.72); font-weight: 300; margin: 0 auto 40px; max-width: 580px; }
+    .page-hero-actions { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .btn-hero { background: var(--blue-brand); color: var(--white); padding: 18px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(30,120,212,0.4); transition: background 0.2s, transform 0.15s; }
+    .btn-hero:hover { background: #1665B8; transform: translateY(-2px); }
+    .attributes-row { display: flex; align-items: center; justify-content: center; gap: 0; margin-top: 48px; flex-wrap: wrap; }
+    .attr-item { display: flex; flex-direction: column; align-items: center; padding: 0 32px; border-right: 1px solid rgba(255,255,255,0.15); }
+    .attr-item:last-child { border-right: none; }
+    .attr-label { font-family: 'DM Serif Display', serif; font-size: 20px; font-style: italic; color: var(--white); }
+    .attr-sub { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+    /* WHAT IS TRT */
+    .trt-what { background: var(--cream); }
+    .trt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .cert-badge { margin-top: 32px; display: flex; align-items: center; gap: 16px; background: var(--white); border-radius: 14px; padding: 20px 24px; border: 1px solid var(--border); }
+    .cert-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .cert-icon svg { width: 22px; height: 22px; color: var(--blue-brand); }
+    .cert-text strong { display: block; font-size: 15px; font-weight: 600; color: var(--blue-deep); margin-bottom: 2px; }
+    .cert-text span { font-size: 13px; color: var(--text-light); }
+    .trt-highlights { display: flex; flex-direction: column; gap: 16px; }
+    .highlight-row { display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: var(--white); border-radius: 12px; border: 1px solid var(--border); transition: border-color 0.2s; }
+    .highlight-row:hover { border-color: var(--blue-brand); }
+    .hl-num { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--blue-light); line-height: 1; min-width: 36px; font-style: italic; }
+    .hl-text strong { display: block; font-size: 15px; font-weight: 600; color: var(--blue-deep); margin-bottom: 4px; }
+    .hl-text span { font-size: 13px; color: var(--text-mid); font-weight: 300; line-height: 1.55; }
+
+    /* RESEARCH */
+    .research-section { background: var(--blue-deep); }
+    .research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .research-quote { border-left: 3px solid var(--blue-brand); padding-left: 28px; margin-top: 32px; }
+    .research-quote p { font-family: 'DM Serif Display', serif; font-size: 20px; font-style: italic; line-height: 1.55; color: rgba(255,255,255,0.85); }
+    .research-quote .source { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.45); font-style: normal; margin-top: 12px; display: block; }
+    .research-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .research-stat { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px; text-align: center; }
+    .research-stat .num { font-family: 'DM Serif Display', serif; font-size: 40px; line-height: 1; color: #7EC4F4; display: block; margin-bottom: 8px; }
+    .research-stat .desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.5; font-weight: 300; }
+
+    /* PILLARS */
+    .pillars-section { background: var(--white); }
+    .pillars-header { text-align: center; margin-bottom: 56px; }
+    .pillars-header .section-label { justify-content: center; }
+    .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .pillar-card { background: var(--cream); border-radius: 20px; padding: 40px 32px; border: 1px solid transparent; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+    .pillar-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,36,72,0.08); border-color: var(--border); background: var(--white); }
+    .pillar-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .pillar-icon svg { width: 24px; height: 24px; color: var(--blue-brand); }
+    .pillar-card h3 { font-size: 18px; font-weight: 600; color: var(--blue-deep); margin-bottom: 10px; }
+    .pillar-card p { font-size: 14px; color: var(--text-mid); line-height: 1.65; font-weight: 300; }
+
+    /* PROCESS */
+    .process-section { background: var(--cream); }
+    .process-header { text-align: center; margin-bottom: 64px; }
+    .process-header .section-label { justify-content: center; }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 28px; left: calc(12.5% + 20px); right: calc(12.5% + 20px); height: 1px; background: var(--border); z-index: 0; }
+    .process-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+    .step-circle { width: 56px; height: 56px; border-radius: 50%; background: var(--blue-brand); color: var(--white); font-family: 'DM Serif Display', serif; font-size: 20px; font-style: italic; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; box-shadow: 0 4px 16px rgba(30,120,212,0.3); }
+    .process-step h4 { font-size: 16px; font-weight: 600; color: var(--blue-deep); margin-bottom: 8px; }
+    .process-step p { font-size: 14px; color: var(--text-mid); font-weight: 300; line-height: 1.6; }
+
+    /* BOOKING */
+    .booking-section { background: var(--white); }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .booking-left h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 16px; }
+    .booking-left > p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin-bottom: 32px; }
+    .perk-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .perk-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--text-dark); line-height: 1.5; }
+    .perk-check { width: 22px; height: 22px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .perk-check svg { width: 11px; height: 11px; color: var(--blue-brand); }
+    .phone-block { padding: 24px; background: var(--cream); border-radius: 14px; border: 1px solid var(--border); }
+    .phone-block .label { font-size: 13px; color: var(--text-light); margin-bottom: 4px; }
+    .phone-block a { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--blue-deep); text-decoration: none; display: block; }
+    .phone-block a:hover { color: var(--blue-brand); }
+    .form-card { background: var(--cream); border-radius: 20px; padding: 40px; border: 1px solid var(--border); }
+    .form-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--blue-deep); margin-bottom: 4px; }
+    .form-card .form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--white); font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--text-dark); transition: border-color 0.2s, box-shadow 0.2s; -webkit-appearance: none; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--blue-brand); box-shadow: 0 0 0 3px rgba(30,120,212,0.1); }
+    .form-group textarea { resize: vertical; min-height: 96px; }
+    .form-submit { width: 100%; padding: 16px; border-radius: 8px; background: var(--blue-brand); color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(30,120,212,0.28); margin-top: 8px; }
+    .form-submit:hover { background: #1665B8; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(30,120,212,0.32); }
+    .form-note { font-size: 12px; color: var(--text-light); text-align: center; margin-top: 10px; }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--white); display: block; margin-bottom: 6px; }
+    .footer-logo-name span { color: var(--blue-brand); }
+    .footer-logo-sub { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .trt-grid, .research-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+      .attributes-row { gap: 0; }
+      .attr-item { padding: 12px 20px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); width: 50%; }
+      .attr-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.15); }
+      .research-stats { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-copy { text-align: center; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 64px 20px; }
+      .page-hero { padding: 110px 20px 72px; }
+      .process-steps { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .attr-item { width: 100%; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+    }
+
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="chiropractic.html" class="active">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#book" class="nav-cta">Book Online</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span></span>Chiropractic Care · Lee's Summit, MO</div>
+    <h1>Chiropractic Care That's<br><em>Different by Design.</em></h1>
+    <p class="page-hero-desc">We use Torque Release Technique — the first chiropractic method of the new millennium, certified advanced, and specifically created to increase well-being and human potential. Gentle enough for newborns, effective for everyone.</p>
+    <div class="page-hero-actions">
+      <a href="#book" class="btn-hero">Book Your First Visit</a>
+      <a href="tel:+18168951800" class="btn-ghost-dark">Call (816) 895-1800</a>
+    </div>
+    <div class="attributes-row">
+      <div class="attr-item">
+        <span class="attr-label">Specific</span>
+        <span class="attr-sub">Targeted Adjustments</span>
+      </div>
+      <div class="attr-item">
+        <span class="attr-label">Gentle</span>
+        <span class="attr-sub">No Cracking Required</span>
+      </div>
+      <div class="attr-item">
+        <span class="attr-label">Safe</span>
+        <span class="attr-sub">All Ages Welcome</span>
+      </div>
+      <div class="attr-item">
+        <span class="attr-label">Effective</span>
+        <span class="attr-sub">Research-Backed Results</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IS TRT -->
+<section class="trt-what">
+  <div class="section-inner">
+    <div class="trt-grid">
+      <div>
+        <div class="section-label"><span></span>Torque Release Technique</div>
+        <h2 class="section-title">The Most Specific, Scientific Chiropractic Technique in the World</h2>
+        <p class="section-desc">The doctors at Essential Chiropractic hold Certified Advanced Proficiency in Torque Release Technique (TRT) — the first chiropractic technique of the new millennium, proven through research to be one of the most specific and reproducible methods available.</p>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.7;font-weight:300;margin-top:20px;">Drs. Kristen and Greg utilize TRT to find the root cause of health issues. Because of that, they get to see life-changing results on a daily basis — across all ages and conditions.</p>
+        <div class="cert-badge">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="cert-text">
+            <strong>Certified Advanced Proficiency — TRT</strong>
+            <span>Dr. Kristen Ras &amp; Dr. Greg Davis</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="trt-highlights">
+          <div class="highlight-row">
+            <span class="hl-num">01</span>
+            <div class="hl-text">
+              <strong>Neurologically-Based</strong>
+              <span>TRT corrects spinal misalignments that interfere with your nervous system — restoring the communication pathways your body needs to heal and function at its best.</span>
+            </div>
+          </div>
+          <div class="highlight-row">
+            <span class="hl-num">02</span>
+            <div class="hl-text">
+              <strong>Most Researched Technique</strong>
+              <span>TRT is a mixture of the "best-of-the-best" chiropractic systems, developed from scientific research and random controlled trials — not guesswork.</span>
+            </div>
+          </div>
+          <div class="highlight-row">
+            <span class="hl-num">03</span>
+            <div class="hl-text">
+              <strong>Gentle &amp; Reproducible</strong>
+              <span>The adjustments are precise and instrument-assisted — no sudden twisting or cracking. Comfortable for patients of all ages, including newborns and during pregnancy.</span>
+            </div>
+          </div>
+          <div class="highlight-row">
+            <span class="hl-num">04</span>
+            <div class="hl-text">
+              <strong>Root Cause Focus</strong>
+              <span>We don't just chase your symptoms. TRT identifies the underlying spinal dysfunction driving your health issues and corrects it at the source.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE RESEARCH -->
+<section class="research-section">
+  <div class="section-inner">
+    <div class="research-grid">
+      <div>
+        <div class="section-label" style="color:var(--blue-brand);"><span></span>Backed by Science</div>
+        <h2 class="section-title" style="color:var(--white);">TRT Was Built From Research. Not Tradition.</h2>
+        <p style="font-size:17px;color:rgba(255,255,255,0.72);font-weight:300;line-height:1.7;margin-bottom:8px;">TRT was designed as part of scientific research into the health benefits of chiropractic. It was specifically created out of <strong style="color:var(--white);font-weight:500;">random controlled trials</strong> — with the purpose of increasing state of well-being and human potential.</p>
+        <div class="research-quote">
+          <p>"Research published in one of the most respected psychiatry journals showed dramatically increased success in reducing anxiety and depression levels, as well as improved measurements of well-being when TRT chiropractic adjustments were received."</p>
+          <span class="source">— Peer-Reviewed Psychiatry Research on Torque Release Technique</span>
+        </div>
+      </div>
+      <div class="research-stats">
+        <div class="research-stat">
+          <span class="num">#1</span>
+          <div class="desc">Most reproducible chiropractic technique in the world</div>
+        </div>
+        <div class="research-stat">
+          <span class="num">10+</span>
+          <div class="desc">Years serving the Lee's Summit community</div>
+        </div>
+        <div class="research-stat">
+          <span class="num">All</span>
+          <div class="desc">Ages — from newborns to seniors</div>
+        </div>
+        <div class="research-stat">
+          <span class="num">RCT</span>
+          <div class="desc">Developed from random controlled trials</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="pillars-section">
+  <div class="section-inner">
+    <div class="pillars-header">
+      <div class="section-label"><span></span>Why TRT Is Different</div>
+      <h2 class="section-title">Three Reasons Patients Choose Essential Chiropractic</h2>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+        </div>
+        <h3>Neurologically-Based Care</h3>
+        <p>Every adjustment is designed to restore proper nervous system function — not just reduce pain. When your nervous system communicates freely, your body can heal the way it was designed to.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>The Most Researched Technique</h3>
+        <p>TRT isn't based on tradition or habit — it was built from the scientific literature. Every protocol reflects the most current research into how chiropractic adjustments affect the nervous system.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path></svg>
+        </div>
+        <h3>Safe for the Whole Family</h3>
+        <p>Gentle enough for newborns, kids, pregnant mothers, adults, and seniors. We proudly serve entire families in Lee's Summit — providing neurologically-based care at every stage of life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="process-section">
+  <div class="section-inner">
+    <div class="process-header">
+      <div class="section-label"><span></span>What to Expect</div>
+      <h2 class="section-title">Your Path to Better Health</h2>
+      <p class="section-desc" style="margin:0 auto;">Our approach is new and refreshing. Here's exactly what happens when you become a practice member at Essential Chiropractic.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-circle">1</div>
+        <h4>Schedule a Visit</h4>
+        <p>Book online or call (816) 895-1800. Same-week appointments are often available for new patients.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">2</div>
+        <h4>Health History</h4>
+        <p>We take time to understand your background, goals, and symptoms. Care is always personalized — never cookie-cutter.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">3</div>
+        <h4>Neurological Exam</h4>
+        <p>A thorough neurological analysis identifies spinal misalignments and their impact on your nervous system function.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">4</div>
+        <h4>Begin Care</h4>
+        <p>Your custom TRT care plan begins — gentle, precise adjustments that help you function at your very best.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking-section" id="book">
+  <div class="section-inner">
+    <div class="booking-grid">
+      <div class="booking-left">
+        <div class="section-label"><span></span>New Patients Welcome</div>
+        <h2>Book Your First Chiropractic Visit</h2>
+        <p>Whether you're dealing with pain, seeking better performance, or simply want to feel your best — TRT chiropractic care at Essential Chiropractic is a great place to start.</p>
+        <ul class="perk-list">
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            New patients welcome — all ages, all conditions
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Gentle, instrument-assisted adjustments — no cracking
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Certified Advanced Proficiency in TRT
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Same-week appointments often available
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Serving Lee's Summit, Kansas City &amp; surrounding areas
+          </li>
+        </ul>
+        <div class="phone-block">
+          <div class="label">Prefer to call?</div>
+          <a href="tel:+18168951800">(816) 895-1800</a>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <h3>Book Your First Visit</h3>
+          <p class="form-sub">We'll reach out within one business day to confirm your appointment.</p>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/4MNooLLRv4dy2oRUc7Fe"
+            style="width:100%;height:100%;border:none;border-radius:3px;min-height:520px;display:block;"
+            id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Website Contact Form"
+            data-height="undefined"
+            data-layout-iframe-id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-form-id="4MNooLLRv4dy2oRUc7Fe"
+            title="Website Contact Form"
+          ></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div>(816) 895-1800</div>
+      <div style="margin-top:4px;">© 2025 Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

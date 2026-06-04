@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftWave Therapy Lee's Summit, MO | Essential Chiropractic</title>
+  <meta name="description" content="SoftWave Therapy at Essential Chiropractic in Lee's Summit, MO. Non-invasive acoustic wave treatment for knee pain, shoulder pain, arthritis, neuropathy & more. Book online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--blue-deep); letter-spacing: -0.01em; }
+    .nav-logo-name span { color: var(--blue-brand); }
+    .nav-logo-sub { font-size: 11px; font-weight: 400; color: var(--text-light); letter-spacing: 0.07em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+
+    /* SHARED */
+    section { padding: 100px 32px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .section-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    h2.section-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 20px; }
+    .section-desc { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; max-width: 560px; }
+    .btn-ghost-dark { border: 1.5px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 32px; border-radius: 8px; font-size: 15px; font-weight: 500; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s; }
+    .btn-ghost-dark:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(to bottom, rgba(8,20,46,0.68) 0%, rgba(8,20,46,0.58) 100%), url('https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Essential%20Chiropractic%20Softwave%20Treatment%20lees%20summit%2024.jpeg') center/cover no-repeat; padding: 140px 32px 100px; position: relative; overflow: hidden; text-align: center; }
+    .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .page-hero::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .page-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+    .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 24px; }
+    .page-hero-eyebrow span { display: inline-block; width: 24px; height: 1px; background: var(--blue-brand); }
+    .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .page-hero h1 em { font-style: italic; color: #7EC4F4; }
+    .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.72); font-weight: 300; margin: 0 auto 40px; max-width: 580px; }
+    .page-hero-actions { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .btn-hero { background: var(--blue-brand); color: var(--white); padding: 18px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(30,120,212,0.4); transition: background 0.2s, transform 0.15s; }
+    .btn-hero:hover { background: #1665B8; transform: translateY(-2px); }
+    .hero-badges { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 40px; }
+    .hero-badge-pill { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 50px; padding: 8px 18px; font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 500; }
+    .hero-badge-pill::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-brand); flex-shrink: 0; }
+
+    /* WHAT IS SOFTWAVE */
+    .what-section { background: var(--cream); }
+    .what-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .fda-box { margin-top: 32px; background: var(--white); border-radius: 16px; padding: 28px; border: 1px solid var(--border); }
+    .fda-box-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 16px; }
+    .fda-items { display: flex; flex-direction: column; gap: 10px; }
+    .fda-item { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-dark); line-height: 1.4; }
+    .fda-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue-brand); margin-top: 4px; flex-shrink: 0; }
+    .credibility-block { background: var(--blue-deep); border-radius: 16px; padding: 28px 28px 28px 32px; color: var(--white); display: flex; align-items: flex-start; gap: 20px; }
+    .credibility-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(30,120,212,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .credibility-icon svg { width: 20px; height: 20px; color: #7EC4F4; }
+    .credibility-text strong { display: block; font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+    .credibility-text span { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.5; }
+
+    /* HOW IT WORKS */
+    .how-section { background: var(--blue-deep); }
+    .how-header { text-align: center; margin-bottom: 56px; }
+    .how-header h2 { color: var(--white); }
+    .how-header .section-desc { color: rgba(255,255,255,0.7); margin: 0 auto; }
+    .mechanisms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .mechanism-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 28px; }
+    .mechanism-num { font-family: 'DM Serif Display', serif; font-size: 36px; font-style: italic; color: rgba(30,120,212,0.4); line-height: 1; margin-bottom: 16px; display: block; }
+    .mechanism-card h4 { font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .mechanism-card p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; font-weight: 300; }
+
+    /* CONDITIONS */
+    .conditions-section { background: var(--white); }
+    .conditions-header { text-align: center; margin-bottom: 48px; }
+    .conditions-chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .chip { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: var(--cream); border: 1px solid var(--border); border-radius: 50px; font-size: 15px; font-weight: 500; color: var(--text-dark); transition: background 0.2s, border-color 0.2s, color 0.2s; }
+    .chip:hover { background: var(--blue-light); border-color: var(--blue-brand); color: var(--blue-deep); }
+    .chip::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-brand); }
+
+    /* TESTIMONIAL */
+    .testimonial-section { background: var(--cream); }
+    .testimonial-card { max-width: 780px; margin: 0 auto; background: var(--white); border-radius: 24px; padding: 56px; border: 1px solid var(--border); text-align: center; box-shadow: 0 12px 48px rgba(13,36,72,0.07); }
+    .stars { display: flex; gap: 4px; justify-content: center; margin-bottom: 28px; }
+    .stars svg { width: 20px; height: 20px; fill: var(--gold); }
+    .testimonial-quote { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 2.5vw, 26px); line-height: 1.5; color: var(--blue-deep); font-style: italic; margin-bottom: 32px; }
+    .testimonial-author { display: flex; align-items: center; justify-content: center; gap: 14px; }
+    .author-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--blue-brand); display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--white); }
+    .author-name { font-size: 15px; font-weight: 600; color: var(--text-dark); }
+    .author-tag { font-size: 13px; color: var(--text-light); }
+
+    /* BOOKING */
+    .booking-section { background: var(--white); }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .booking-left h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 16px; }
+    .booking-left > p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin-bottom: 32px; }
+    .perk-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .perk-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--text-dark); line-height: 1.5; }
+    .perk-check { width: 22px; height: 22px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .perk-check svg { width: 11px; height: 11px; color: var(--blue-brand); }
+    .phone-block { padding: 24px; background: var(--cream); border-radius: 14px; border: 1px solid var(--border); }
+    .phone-block .label { font-size: 13px; color: var(--text-light); margin-bottom: 4px; }
+    .phone-block a { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--blue-deep); text-decoration: none; display: block; }
+    .phone-block a:hover { color: var(--blue-brand); }
+    .form-card { background: var(--cream); border-radius: 20px; padding: 40px; border: 1px solid var(--border); }
+    .form-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--blue-deep); margin-bottom: 4px; }
+    .form-card .form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px 16px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--white); font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--text-dark); transition: border-color 0.2s, box-shadow 0.2s; -webkit-appearance: none; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--blue-brand); box-shadow: 0 0 0 3px rgba(30,120,212,0.1); }
+    .form-group textarea { resize: vertical; min-height: 96px; }
+    .form-submit { width: 100%; padding: 16px; border-radius: 8px; background: var(--blue-brand); color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(30,120,212,0.28); margin-top: 8px; }
+    .form-submit:hover { background: #1665B8; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(30,120,212,0.32); }
+    .form-note { font-size: 12px; color: var(--text-light); text-align: center; margin-top: 10px; }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--white); display: block; margin-bottom: 6px; }
+    .footer-logo-name span { color: var(--blue-brand); }
+    .footer-logo-sub { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .what-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; }
+      .mechanisms-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-copy { text-align: center; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 64px 20px; }
+      .page-hero { padding: 110px 20px 72px; }
+      .mechanisms-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .testimonial-card { padding: 36px 28px; }
+    }
+
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html" class="active">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#book" class="nav-cta">Book Online</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span></span>SoftWave Therapy · Lee's Summit, MO</div>
+    <h1>Heal Faster. Hurt Less.<br><em>No Surgery Required.</em></h1>
+    <p class="page-hero-desc">SoftWave Therapy uses patented acoustic wave technology to activate your body's natural healing process — reducing inflammation, restoring tissue, and relieving pain without injections or downtime.</p>
+    <div class="page-hero-actions">
+      <a href="#book" class="btn-hero">Schedule a SoftWave Session</a>
+      <a href="tel:+18168951800" class="btn-ghost-dark">Call (816) 895-1800</a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge-pill">Non-Invasive</div>
+      <div class="hero-badge-pill">No Anesthesia</div>
+      <div class="hero-badge-pill">FDA 510(k) Cleared</div>
+      <div class="hero-badge-pill">High Patient Satisfaction</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IS SOFTWAVE -->
+<section class="what-section">
+  <div class="section-inner">
+    <div class="what-grid">
+      <div>
+        <div class="section-label"><span></span>The Technology</div>
+        <h2 class="section-title">What Is SoftWave Therapy?</h2>
+        <p class="section-desc">SoftWave TRT uses electro-hydraulically produced acoustic waves to trigger a powerful healing response in the body. It mimics cellular injury at the treatment site — signaling your body's own stem cells to migrate to the area and accelerate natural regeneration.</p>
+        <p style="font-size:16px;color:var(--text-mid);line-height:1.7;font-weight:300;margin-top:20px;">The treatment is completely atraumatic to tissues and cells. It's comfortable, fast, and requires no recovery time — most sessions take 15 minutes or less.</p>
+        <div class="credibility-block" style="margin-top:32px;">
+          <div class="credibility-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="credibility-text">
+            <strong>Used by Professional Sports Organizations</strong>
+            <span>Trusted at leading national and international research centers, medical institutions, and professional sport organizations worldwide.</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="fda-box">
+          <div class="fda-box-title">FDA 510(k) Cleared For:</div>
+          <div class="fda-items">
+            <div class="fda-item"><div class="fda-dot"></div>Activation of connective tissue</div>
+            <div class="fda-item"><div class="fda-dot"></div>Treatment of chronic diabetic foot ulcers</div>
+            <div class="fda-item"><div class="fda-dot"></div>Treatment of acute second-degree burns</div>
+            <div class="fda-item"><div class="fda-dot"></div>Pain reduction</div>
+            <div class="fda-item"><div class="fda-dot"></div>Improved blood supply</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;background:var(--blue-deep);border-radius:16px;padding:28px;color:var(--white);text-align:center;">
+          <div style="font-family:'DM Serif Display',serif;font-size:48px;line-height:1;color:#7EC4F4;">15<span style="font-size:24px;">min</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.65);margin-top:6px;font-weight:300;">Typical session length.<br>No downtime. Back to your day immediately.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="section-inner">
+    <div class="how-header">
+      <div class="section-label" style="justify-content:center;"><span></span>The Science</div>
+      <h2 class="section-title">How SoftWave Works</h2>
+      <p class="section-desc">SoftWave uses patented technology to stimulate processes at the cellular level — addressing injured areas and accelerating your body's natural healing cascade.</p>
+    </div>
+    <div class="mechanisms-grid">
+      <div class="mechanism-card">
+        <span class="mechanism-num">01</span>
+        <h4>Increases Blood Supply</h4>
+        <p>Enhanced circulation delivers oxygen and nutrients to damaged tissue, creating the ideal environment for healing.</p>
+      </div>
+      <div class="mechanism-card">
+        <span class="mechanism-num">02</span>
+        <h4>Modulates Inflammation</h4>
+        <p>Reduces chronic inflammation that blocks healing and causes ongoing pain — without suppressing the body's natural repair signals.</p>
+      </div>
+      <div class="mechanism-card">
+        <span class="mechanism-num">03</span>
+        <h4>Stimulates Cellular Repair</h4>
+        <p>Activates and stimulates the body's own stem cells, directing them to migrate to the treatment area for targeted repair.</p>
+      </div>
+      <div class="mechanism-card">
+        <span class="mechanism-num">04</span>
+        <h4>Regenerates Tissue</h4>
+        <p>Remodels damaged tissue structures and promotes healthy regrowth — addressing the root injury, not just the pain.</p>
+      </div>
+      <div class="mechanism-card">
+        <span class="mechanism-num">05</span>
+        <h4>Antibacterial Effect</h4>
+        <p>Creates an inhospitable environment for bacteria at the treatment site, reducing the risk of secondary complications.</p>
+      </div>
+      <div class="mechanism-card">
+        <span class="mechanism-num">06</span>
+        <h4>Reduces Acute &amp; Chronic Pain</h4>
+        <p>Delivers measurable pain relief — both immediately following treatment and cumulatively with each session.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section class="conditions-section">
+  <div class="section-inner">
+    <div class="conditions-header">
+      <div class="section-label" style="justify-content:center;"><span></span>Conditions We Treat</div>
+      <h2 class="section-title">SoftWave Treats a Wide Range of Conditions</h2>
+      <p class="section-desc" style="margin:0 auto;">From sports injuries to chronic pain — if it involves tissue, inflammation, or nerve damage, SoftWave may be able to help.</p>
+    </div>
+    <div class="conditions-chips">
+      <div class="chip">Knee Pain</div>
+      <div class="chip">Shoulder Pain</div>
+      <div class="chip">Wrist Pain</div>
+      <div class="chip">Arthritis</div>
+      <div class="chip">Neuropathy</div>
+      <div class="chip">Overuse Injuries</div>
+      <div class="chip">Plantar Fasciitis</div>
+      <div class="chip">Morton's Neuroma</div>
+      <div class="chip">Lower Back Pain</div>
+      <div class="chip">Hip Pain</div>
+      <div class="chip">Elbow Pain</div>
+      <div class="chip">Tendinopathy</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+  <div class="section-inner">
+    <div class="section-label" style="justify-content:center;margin-bottom:40px;"><span></span>Patient Story</div>
+    <div class="testimonial-card">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      </div>
+      <p class="testimonial-quote">"I struggled for some time with deep knee bends during exercise or simply picking up my granddaughter. I also had pain going up and down the stairs with intense cracking in my knees. I took advantage of SoftWave and the results have been shocking! I can do deep bends without pain and the BEST part is I can pick up my granddaughter with ease!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">D</div>
+        <div>
+          <div class="author-name">Essential Chiropractic Patient</div>
+          <div class="author-tag">Lee's Summit, MO</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking-section" id="book">
+  <div class="section-inner">
+    <div class="booking-grid">
+      <div class="booking-left">
+        <div class="section-label"><span></span>Ready to Feel Better?</div>
+        <h2>Schedule Your SoftWave Session</h2>
+        <p>Most patients notice results within the first few sessions. Book online and we'll find a time that works for you — same-week appointments often available.</p>
+        <ul class="perk-list">
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Non-invasive — no needles, no surgery, no downtime
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            FDA 510(k) cleared technology
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Addresses the root cause, not just symptoms
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Sessions typically 15 minutes or less
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Serving Lee's Summit, Kansas City &amp; surrounding areas
+          </li>
+        </ul>
+        <div class="phone-block">
+          <div class="label">Prefer to call?</div>
+          <a href="tel:+18168951800">(816) 895-1800</a>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <h3>Book a SoftWave Session</h3>
+          <p class="form-sub">We'll reach out within one business day to confirm your appointment.</p>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/4MNooLLRv4dy2oRUc7Fe"
+            style="width:100%;height:100%;border:none;border-radius:3px;min-height:520px;display:block;"
+            id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Website Contact Form"
+            data-height="undefined"
+            data-layout-iframe-id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-form-id="4MNooLLRv4dy2oRUc7Fe"
+            title="Website Contact Form"
+          ></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div>(816) 895-1800</div>
+      <div style="margin-top:4px;">© 2025 Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

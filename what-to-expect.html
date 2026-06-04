@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What to Expect | New Patient Process | Essential Chiropractic Lee's Summit, MO</title>
+  <meta name="description" content="Here's exactly what to expect as a new patient at Essential Chiropractic in Lee's Summit, MO — from paperwork and consultation to your scientific assessment and first adjustment. Call (816) 895-1800.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+
+    /* SHARED */
+    section { padding: 100px 32px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .section-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    h2.section-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 20px; }
+    .section-desc { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; max-width: 560px; }
+    .btn-ghost-dark { border: 1.5px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 32px; border-radius: 8px; font-size: 15px; font-weight: 500; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s; }
+    .btn-ghost-dark:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(to bottom, rgba(8,20,46,0.72) 0%, rgba(8,20,46,0.6) 100%), url('https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Essential%20Chiropractic%20Softwave%20Treatment%20lees%20summit%205.jpeg') center/cover no-repeat; padding: 140px 32px 100px; position: relative; overflow: hidden; text-align: center; }
+    .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .page-hero::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .page-hero-inner { max-width: 780px; margin: 0 auto; position: relative; z-index: 1; }
+    .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 24px; }
+    .page-hero-eyebrow span { display: inline-block; width: 24px; height: 1px; background: var(--blue-brand); }
+    .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .page-hero h1 em { font-style: italic; color: #7EC4F4; }
+    .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.75); font-weight: 300; margin: 0 auto 40px; max-width: 600px; }
+    .page-hero-actions { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .btn-hero { background: var(--blue-brand); color: var(--white); padding: 18px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(30,120,212,0.4); transition: background 0.2s, transform 0.15s; }
+    .btn-hero:hover { background: #1665B8; transform: translateY(-2px); }
+    .hero-mini-steps { display: flex; align-items: center; justify-content: center; gap: 0; margin-top: 48px; flex-wrap: wrap; }
+    .mini-step { display: flex; flex-direction: column; align-items: center; padding: 0 28px; border-right: 1px solid rgba(255,255,255,0.15); }
+    .mini-step:last-child { border-right: none; }
+    .mini-step .num { font-family: 'DM Serif Display', serif; font-size: 26px; font-style: italic; color: var(--white); }
+    .mini-step .lbl { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+    /* INTRO */
+    .intro { background: var(--white); text-align: center; padding-bottom: 60px; }
+    .intro .section-inner { max-width: 760px; }
+    .intro .section-label { justify-content: center; }
+    .intro p { font-size: 18px; color: var(--text-mid); font-weight: 300; line-height: 1.75; }
+
+    /* TIMELINE */
+    .timeline { background: var(--cream); padding-top: 60px; }
+    .timeline-wrap { max-width: 960px; margin: 0 auto; position: relative; }
+    .timeline-wrap::before { content: ''; position: absolute; top: 12px; bottom: 12px; left: 39px; width: 2px; background: linear-gradient(to bottom, var(--blue-brand) 0%, var(--border) 100%); }
+    .tl-step { position: relative; display: grid; grid-template-columns: 80px 1fr; gap: 28px; align-items: flex-start; margin-bottom: 36px; }
+    .tl-step:last-child { margin-bottom: 0; }
+    .tl-marker { position: relative; z-index: 2; width: 80px; display: flex; justify-content: center; }
+    .tl-circle { width: 80px; height: 80px; border-radius: 50%; background: var(--blue-brand); color: var(--white); display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(30,120,212,0.35); border: 4px solid var(--cream); }
+    .tl-circle .step-word { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; line-height: 1; margin-bottom: 2px; }
+    .tl-circle .step-no { font-family: 'DM Serif Display', serif; font-size: 30px; font-style: italic; line-height: 1; }
+    .tl-card { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 28px 32px; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+    .tl-card:hover { transform: translateY(-3px); box-shadow: 0 18px 44px rgba(13,36,72,0.1); border-color: var(--blue-brand); }
+    .tl-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+    .tl-icon { width: 46px; height: 46px; border-radius: 11px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .tl-icon svg { width: 23px; height: 23px; color: var(--blue-brand); }
+    .tl-card h3 { font-family: 'DM Serif Display', serif; font-size: 23px; line-height: 1.15; letter-spacing: -0.01em; color: var(--blue-deep); }
+    .tl-card p { font-size: 15px; color: var(--text-mid); font-weight: 300; line-height: 1.7; }
+    .tl-card.final { background: var(--blue-deep); border-color: var(--blue-deep); }
+    .tl-card.final h3 { color: var(--white); }
+    .tl-card.final p { color: rgba(255,255,255,0.78); }
+    .tl-card.final .tl-icon { background: rgba(255,255,255,0.1); }
+    .tl-card.final .tl-icon svg { color: #7EC4F4; }
+    .tl-step.final-step .tl-circle { background: var(--gold); box-shadow: 0 8px 24px rgba(200,169,110,0.45); }
+    .bring-note { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--blue-brand); background: var(--blue-light); padding: 8px 14px; border-radius: 50px; }
+    .bring-note svg { width: 14px; height: 14px; }
+
+    /* SECOND VISIT NOTE */
+    .visit-split { background: var(--white); }
+    .visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .visit-card { border-radius: 18px; padding: 36px; border: 1px solid var(--border); background: var(--cream); }
+    .visit-card .tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 12px; }
+    .visit-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--blue-deep); margin-bottom: 10px; }
+    .visit-card p { font-size: 15px; color: var(--text-mid); font-weight: 300; line-height: 1.7; }
+    .visit-card ul { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+    .visit-card li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-dark); }
+    .visit-check { width: 20px; height: 20px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .visit-check svg { width: 10px; height: 10px; color: var(--blue-brand); }
+
+    /* BOOKING */
+    .booking-section { background: var(--cream); }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .booking-left h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 16px; }
+    .booking-left > p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin-bottom: 32px; }
+    .perk-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .perk-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--text-dark); line-height: 1.5; }
+    .perk-check { width: 22px; height: 22px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .perk-check svg { width: 11px; height: 11px; color: var(--blue-brand); }
+    .phone-block { padding: 24px; background: var(--white); border-radius: 14px; border: 1px solid var(--border); }
+    .phone-block .label { font-size: 13px; color: var(--text-light); margin-bottom: 4px; }
+    .phone-block a { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--blue-deep); text-decoration: none; display: block; }
+    .phone-block a:hover { color: var(--blue-brand); }
+    .form-card { background: var(--white); border-radius: 20px; padding: 40px; border: 1px solid var(--border); }
+    .form-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--blue-deep); margin-bottom: 4px; }
+    .form-card .form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 28px; }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .visit-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-copy { text-align: center; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 64px 20px; }
+      .page-hero { padding: 110px 20px 72px; }
+      .mini-step { padding: 10px 18px; }
+      .tl-step { grid-template-columns: 60px 1fr; gap: 18px; }
+      .tl-marker { width: 60px; }
+      .tl-circle { width: 60px; height: 60px; border-width: 3px; }
+      .tl-circle .step-no { font-size: 22px; }
+      .tl-circle .step-word { font-size: 8px; }
+      .timeline-wrap::before { left: 29px; }
+      .tl-card { padding: 22px 22px; }
+      .tl-card h3 { font-size: 20px; }
+    }
+
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html" class="active">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#book" class="nav-cta">Schedule Now</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span></span>New Patients · Lee's Summit, MO</div>
+    <h1>What to Expect at Our<br><em>Lee's Summit Practice</em></h1>
+    <p class="page-hero-desc">Starting chiropractic care should feel easy and welcoming. Here's exactly what your first visit looks like — step by step — so you know what to expect before you ever walk through the door.</p>
+    <div class="page-hero-actions">
+      <a href="#book" class="btn-hero">Schedule Your Appointment</a>
+      <a href="tel:+18168951800" class="btn-ghost-dark">Call (816) 895-1800</a>
+    </div>
+    <div class="hero-mini-steps">
+      <div class="mini-step"><span class="num">7</span><span class="lbl">Simple Steps</span></div>
+      <div class="mini-step"><span class="num">2</span><span class="lbl">Visits to Begin</span></div>
+      <div class="mini-step"><span class="num">1</span><span class="lbl">Healing Journey</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label"><span></span>Your First Visit</div>
+    <h2 class="section-title">A Clear, Comfortable Process</h2>
+    <p>It is our goal to make you as comfortable as possible during every visit. From the moment you arrive, we walk you through each step — taking the time to understand your health needs so we can serve you as best we can.</p>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+  <div class="timeline-wrap">
+
+    <!-- 1 -->
+    <div class="tl-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">1</span></div></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line></svg></div>
+          <h3>New Patient Paperwork</h3>
+        </div>
+        <p>All new practice members at Essential Chiropractic are asked to fill out the new practice member paperwork as thoroughly as possible. This helps us understand your health needs better, and allows us to serve you as best we can.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="tl-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">2</span></div></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg></div>
+          <h3>Office Tour</h3>
+        </div>
+        <p>After completing your new member application, we take you on a brief educational tour of our office. Knowing your way around the practice is the first step in making every visit feel comfortable and familiar.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="tl-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">3</span></div></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg></div>
+          <h3>One-on-One Consultation</h3>
+        </div>
+        <p>We sit down with you one-on-one to better understand your health needs. Here we discuss your concerns and goals for care, and learn about any traumas that might be contributing to your health concerns.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="tl-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">4</span></div></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+          <h3>Scientific Chiropractic Assessment</h3>
+        </div>
+        <p>Using our state-of-the-art assessment technology, we perform a thorough evaluation of your spinal health. This allows us to pinpoint if — and where — there are any areas of stress in your spine.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="tl-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">5</span></div></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="12" y1="3" x2="12" y2="21"></line></svg></div>
+          <h3>Digital X-Ray</h3>
+        </div>
+        <p>Essential Chiropractic has a digital X-ray unit on site. If necessary, it allows us to see the exact health of your spine — giving us the opportunity to tailor our care to your specific health needs.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="tl-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">6</span></div></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+          <h3>Orientation &amp; Report of Findings</h3>
+        </div>
+        <p>Your next visit begins with a brief report discussing our approach to your health needs and goals. We then review all the findings from your initial visit and discuss your individualized treatment plan.</p>
+        <span class="bring-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path></svg>Bring a friend or loved one to this visit</span>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="tl-step final-step">
+      <div class="tl-marker"><div class="tl-circle"><span class="step-word">Step</span><span class="step-no">7</span></div></div>
+      <div class="tl-card final">
+        <div class="tl-head">
+          <div class="tl-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg></div>
+          <h3>Your First Adjustment</h3>
+        </div>
+        <p>At the conclusion of your report of findings, you have the opportunity to receive your first specific chiropractic adjustment — your first step toward optimal health. We look forward to partnering with you on your healing journey.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TWO-VISIT BREAKDOWN -->
+<section class="visit-split">
+  <div class="section-inner">
+    <div class="section-label"><span></span>How It's Structured</div>
+    <h2 class="section-title">Two Visits to Get Started</h2>
+    <p class="section-desc" style="margin-bottom:48px;">Your new patient process is spread across two appointments — so nothing feels rushed and we can build care around what we actually find.</p>
+    <div class="visit-grid">
+      <div class="visit-card">
+        <span class="tag">Visit One</span>
+        <h3>Discovery &amp; Assessment</h3>
+        <p>We get to know you, your health history, and the root cause behind your concerns.</p>
+        <ul>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>New patient paperwork</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Educational office tour</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>One-on-one consultation</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Scientific chiropractic assessment</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Digital X-ray (if necessary)</li>
+        </ul>
+      </div>
+      <div class="visit-card">
+        <span class="tag">Visit Two</span>
+        <h3>Report &amp; First Adjustment</h3>
+        <p>We share what we found, walk you through your plan, and begin care.</p>
+        <ul>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>New patient orientation</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Report of findings</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Your individualized treatment plan</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Bring a friend or loved one</li>
+          <li><span class="visit-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></span>Your first specific adjustment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section" id="book">
+  <div class="section-inner">
+    <div class="booking-grid">
+      <div class="booking-left">
+        <div class="section-label"><span></span>New Patients Welcome</div>
+        <h2>Schedule Your Appointment Now</h2>
+        <p>Ready to take the first step toward optimal health? Reach out and we'll get you set up for your first visit — all ages and all conditions welcome.</p>
+        <ul class="perk-list">
+          <li><div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>New patients welcome — all ages, all conditions</li>
+          <li><div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Gentle, instrument-assisted adjustments — no cracking</li>
+          <li><div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Digital X-ray available on site</li>
+          <li><div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Same-week appointments often available</li>
+          <li><div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Serving Lee's Summit, Kansas City &amp; surrounding areas</li>
+        </ul>
+        <div class="phone-block">
+          <div class="label">Prefer to call?</div>
+          <a href="tel:+18168951800">(816) 895-1800</a>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <h3>Book Your First Visit</h3>
+          <p class="form-sub">We'll reach out within one business day to confirm your appointment.</p>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/4MNooLLRv4dy2oRUc7Fe"
+            style="width:100%;height:100%;border:none;border-radius:3px;min-height:520px;display:block;"
+            id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Website Contact Form"
+            data-height="undefined"
+            data-layout-iframe-id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-form-id="4MNooLLRv4dy2oRUc7Fe"
+            title="Website Contact Form"
+          ></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div>(816) 895-1800</div>
+      <div style="margin-top:4px;">© 2025 Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Doctors | Essential Chiropractic Lee's Summit, MO</title>
+  <meta name="description" content="Meet Dr. Kristen Ras-Davis and Dr. Greg Davis — the chiropractors behind Essential Chiropractic in Lee's Summit, MO. Certified TRT specialists dedicated to your family's health.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--blue-deep); letter-spacing: -0.01em; }
+    .nav-logo-name span { color: var(--blue-brand); }
+    .nav-logo-sub { font-size: 11px; font-weight: 400; color: var(--text-light); letter-spacing: 0.07em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+
+    /* SHARED */
+    section { padding: 100px 32px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .section-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    h2.section-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 20px; }
+
+    /* PAGE HERO */
+    .page-hero { background: var(--blue-deep); padding: 140px 32px 100px; position: relative; overflow: hidden; text-align: center; }
+    .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .page-hero::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .page-hero-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+    .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 24px; }
+    .page-hero-eyebrow span { display: inline-block; width: 24px; height: 1px; background: var(--blue-brand); }
+    .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 60px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .page-hero h1 em { font-style: italic; color: #7EC4F4; }
+    .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.72); font-weight: 300; margin: 0 auto; max-width: 540px; }
+
+    /* DOCTOR SECTIONS */
+    .doctor-section { padding: 100px 32px; }
+    .doctor-section.bg-cream { background: var(--cream); }
+    .doctor-section.bg-white { background: var(--white); }
+    .doctor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .doctor-grid.reverse { direction: rtl; }
+    .doctor-grid.reverse > * { direction: ltr; }
+
+    /* DOCTOR PHOTO */
+    .doctor-photo-wrap { position: relative; }
+    .doctor-photo-card { border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(13,36,72,0.14); background: linear-gradient(160deg, #0d2448 0%, #1265ba 55%, #1e78d4 100%); aspect-ratio: 3/4; max-height: 520px; }
+    .doctor-photo-card img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    /* Fallback if image fails to load */
+    .doctor-photo-card .img-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; min-height: 420px; }
+    .doctor-photo-card .img-fallback svg { width: 64px; height: 64px; opacity: 0.25; color: var(--white); }
+    .doctor-name-plate { position: absolute; bottom: -20px; left: 24px; right: 24px; background: var(--white); border-radius: 14px; padding: 16px 20px; box-shadow: 0 12px 32px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-between; }
+    .doctor-name-plate-name { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--blue-deep); line-height: 1.2; }
+    .doctor-name-plate-title { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+    .trt-badge { background: var(--blue-brand); color: var(--white); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 12px; border-radius: 6px; white-space: nowrap; }
+
+    /* DOCTOR CONTENT */
+    .doctor-content { padding-bottom: 20px; }
+    .doctor-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .doctor-eyebrow span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    .doctor-name { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 8px; }
+    .doctor-title { font-size: 15px; color: var(--text-light); font-weight: 400; margin-bottom: 24px; }
+    .credentials { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .credential { display: inline-block; padding: 6px 14px; background: var(--blue-light); border-radius: 50px; font-size: 12px; font-weight: 600; color: var(--blue-deep); }
+    .doctor-bio { display: flex; flex-direction: column; gap: 16px; }
+    .doctor-bio p { font-size: 16px; color: var(--text-mid); line-height: 1.75; font-weight: 300; }
+    .doctor-bio p strong { color: var(--text-dark); font-weight: 500; }
+
+    /* MILESTONES */
+    .milestones { margin-top: 28px; display: flex; flex-direction: column; gap: 0; border-left: 2px solid var(--border); padding-left: 20px; }
+    .milestone { position: relative; padding: 12px 0; }
+    .milestone::before { content: ''; position: absolute; left: -25px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; background: var(--blue-brand); border: 2px solid var(--white); box-shadow: 0 0 0 2px var(--blue-brand); }
+    .milestone-place { font-size: 14px; font-weight: 600; color: var(--blue-deep); }
+    .milestone-detail { font-size: 13px; color: var(--text-light); }
+
+    /* TOGETHER SECTION */
+    .together-section { background: var(--blue-deep); padding: 100px 32px; }
+    .together-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .together-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .together-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    .together-section h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .together-section p { font-size: 17px; color: rgba(255,255,255,0.72); font-weight: 300; line-height: 1.75; }
+    .together-section p + p { margin-top: 16px; }
+    .together-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 40px; }
+    .together-card-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 24px; }
+    .journey-steps { display: flex; flex-direction: column; gap: 0; }
+    .journey-step { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .journey-step:last-child { border-bottom: none; }
+    .journey-dot { width: 32px; height: 32px; border-radius: 50%; background: rgba(30,120,212,0.25); border: 1px solid rgba(30,120,212,0.4); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .journey-dot svg { width: 14px; height: 14px; color: #7EC4F4; }
+    .journey-step-text strong { display: block; font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 2px; }
+    .journey-step-text span { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+
+    /* VALUES */
+    .values-section { background: var(--cream); }
+    .values-header { text-align: center; margin-bottom: 56px; }
+    .values-header .section-label { justify-content: center; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .value-card { background: var(--white); border-radius: 20px; padding: 36px 28px; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
+    .value-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,36,72,0.08); }
+    .value-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .value-icon svg { width: 24px; height: 24px; color: var(--blue-brand); }
+    .value-card h3 { font-size: 18px; font-weight: 600; color: var(--blue-deep); margin-bottom: 10px; }
+    .value-card p { font-size: 14px; color: var(--text-mid); line-height: 1.65; font-weight: 300; }
+
+    /* BOOKING */
+    .booking-section { background: var(--white); }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .booking-left h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 16px; }
+    .booking-left > p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin-bottom: 32px; }
+    .perk-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .perk-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--text-dark); line-height: 1.5; }
+    .perk-check { width: 22px; height: 22px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .perk-check svg { width: 11px; height: 11px; color: var(--blue-brand); }
+    .phone-block { padding: 24px; background: var(--cream); border-radius: 14px; border: 1px solid var(--border); }
+    .phone-block .label { font-size: 13px; color: var(--text-light); margin-bottom: 4px; }
+    .phone-block a { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--blue-deep); text-decoration: none; display: block; }
+    .phone-block a:hover { color: var(--blue-brand); }
+    .form-card { background: var(--cream); border-radius: 20px; padding: 40px; border: 1px solid var(--border); }
+    .form-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--blue-deep); margin-bottom: 4px; }
+    .form-card .form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 24px; }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--white); display: block; margin-bottom: 6px; }
+    .footer-logo-name span { color: var(--blue-brand); }
+    .footer-logo-sub { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .doctor-grid, .doctor-grid.reverse, .together-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; direction: ltr; }
+      .values-grid { grid-template-columns: 1fr; }
+      .doctor-photo-card { aspect-ratio: 4/3; max-height: 360px; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-copy { text-align: center; }
+    }
+    @media (max-width: 600px) {
+      section, .doctor-section, .together-section { padding: 64px 20px; }
+      .page-hero { padding: 110px 20px 72px; }
+    }
+
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="#book" class="nav-cta">Book Online</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span></span>Our Team · Lee's Summit, MO</div>
+    <h1>Meet the Doctors Behind<br><em>Essential Chiropractic</em></h1>
+    <p class="page-hero-desc">Two board-certified chiropractors. One shared mission — to help every family in Lee's Summit experience the life-changing benefits of neurologically-based chiropractic care.</p>
+  </div>
+</div>
+
+<!-- DR. KRISTEN -->
+<section class="doctor-section bg-cream" id="dr-kristen">
+  <div class="section-inner">
+    <div class="doctor-grid">
+      <div class="doctor-photo-wrap">
+        <div class="doctor-photo-card">
+          <img src="Dr_ K Headshot_JPG (1).avif" alt="Dr. Kristen Ras-Davis, Chiropractor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-fallback" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+        </div>
+        <div class="doctor-name-plate">
+          <div>
+            <div class="doctor-name-plate-name">Dr. Kristen Ras-Davis</div>
+            <div class="doctor-name-plate-title">Doctor of Chiropractic · Summa Cum Laude</div>
+          </div>
+          <div class="trt-badge">Certified TRT</div>
+        </div>
+      </div>
+      <div class="doctor-content">
+        <div class="doctor-eyebrow"><span></span>Meet the Doctor</div>
+        <h2 class="doctor-name">Dr. Kristen<br>Ras-Davis, D.C.</h2>
+        <p class="doctor-title">Doctor of Chiropractic · Co-Founder, Essential Chiropractic</p>
+        <div class="credentials">
+          <span class="credential">B.S. Kinesiology — Univ. of Illinois</span>
+          <span class="credential">D.C. Summa Cum Laude — Logan University</span>
+          <span class="credential">Certified Advanced TRT</span>
+        </div>
+        <div class="doctor-bio">
+          <p>Dr. Kristen grew up in La Grange, Illinois — a suburb of Chicago. She attended the <strong>University of Illinois at Champaign-Urbana</strong>, where she earned her Bachelor's degree in Kinesiology. During her junior year, a class assignment led her to shadow a local chiropractor. She was immediately struck by the atmosphere, the positivity, and the remarkable patient stories she witnessed — and knew she had found her calling.</p>
+          <p>She went on to <strong>Logan University in Chesterfield, MO</strong>, where she earned her second Bachelor's degree and her Doctorate of Chiropractic — <em>graduating Summa Cum Laude</em>. Logan is also where she met Dr. Greg.</p>
+          <p>During chiropractic school, Dr. Kristen was mentored by exceptional doctors and earned an internship at <strong>Stewart Chiropractic Center in Hendersonville, TN</strong> — just outside Nashville. It was there she truly fell in love with chiropractic. She stayed for three more years after graduation, deepening her skills and experience before reuniting with Dr. Greg to open Essential Chiropractic.</p>
+        </div>
+        <div class="milestones">
+          <div class="milestone">
+            <div class="milestone-place">University of Illinois, Champaign-Urbana</div>
+            <div class="milestone-detail">B.S. Kinesiology — first introduced to chiropractic</div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-place">Logan University, Chesterfield, MO</div>
+            <div class="milestone-detail">D.C. Summa Cum Laude — where she met Dr. Greg</div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-place">Stewart Chiropractic Center, Hendersonville, TN</div>
+            <div class="milestone-detail">Internship + 3 years post-graduation clinical experience</div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-place">Essential Chiropractic, Lee's Summit, MO</div>
+            <div class="milestone-detail">Co-founder — serving the community she now calls home</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DR. GREG -->
+<section class="doctor-section bg-white" id="dr-greg">
+  <div class="section-inner">
+    <div class="doctor-grid reverse">
+      <div class="doctor-photo-wrap">
+        <div class="doctor-photo-card">
+          <img src="Headshot.avif" alt="Dr. Greg Davis, Chiropractor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-fallback" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+        </div>
+        <div class="doctor-name-plate">
+          <div>
+            <div class="doctor-name-plate-name">Dr. Greg Davis</div>
+            <div class="doctor-name-plate-title">Doctor of Chiropractic · Board Certified</div>
+          </div>
+          <div class="trt-badge">Certified TRT</div>
+        </div>
+      </div>
+      <div class="doctor-content">
+        <div class="doctor-eyebrow"><span></span>Meet the Doctor</div>
+        <h2 class="doctor-name">Dr. Greg<br>Davis, D.C.</h2>
+        <p class="doctor-title">Doctor of Chiropractic · Co-Founder, Essential Chiropractic</p>
+        <div class="credentials">
+          <span class="credential">D.C. — Logan University</span>
+          <span class="credential">Board Certified</span>
+          <span class="credential">Certified Advanced TRT</span>
+          <span class="credential">Former Collegiate Athlete</span>
+        </div>
+        <div class="doctor-bio">
+          <p>Dr. Greg is a central Illinois native with a lifelong passion for health and performance. As a youth and collegiate athlete, he experienced chiropractic firsthand — it kept him healthy and competing at his best. That personal experience ignited a drive to share those same benefits with others.</p>
+          <p>He earned his Doctorate of Chiropractic from <strong>Logan University, College of Chiropractic</strong>, where he dedicated himself to weight training and developing clinical expertise alongside Dr. Kristen.</p>
+          <p>After graduating, Dr. Greg joined <strong>Innate Chiropractic in Newburgh, New York</strong> — one of the largest chiropractic practices in the Northeast region. During his three-year tenure there, his appreciation for chiropractic deepened as he witnessed daily how powerfully the body heals when nerve interference is removed. He returned to the Midwest ready to build something meaningful alongside Dr. Kristen in Lee's Summit.</p>
+        </div>
+        <div class="milestones">
+          <div class="milestone">
+            <div class="milestone-place">Central Illinois</div>
+            <div class="milestone-detail">Youth &amp; collegiate track athlete — chiropractic patient from an early age</div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-place">Logan University, Chesterfield, MO</div>
+            <div class="milestone-detail">D.C. — where he met Dr. Kristen</div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-place">Innate Chiropractic, Newburgh, NY</div>
+            <div class="milestone-detail">Associate doctor — 3 years at one of the Northeast's largest practices</div>
+          </div>
+          <div class="milestone">
+            <div class="milestone-place">Essential Chiropractic, Lee's Summit, MO</div>
+            <div class="milestone-detail">Co-founder — bringing his knowledge home to the Midwest</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOGETHER / WHY LEE'S SUMMIT -->
+<section class="together-section">
+  <div class="section-inner">
+    <div class="together-grid">
+      <div>
+        <div class="together-label"><span></span>Our Story</div>
+        <h2>Why We Chose Lee's Summit</h2>
+        <p>After years of building their skills on opposite coasts — Dr. Kristen in Tennessee, Dr. Greg in New York — the two doctors got engaged and set out across the Midwest searching for a place to call home and start their practice together.</p>
+        <p style="margin-top:16px;">After exploring multiple cities, the answer was clear. Kansas City, and more specifically Lee's Summit, just <em style="color:#7EC4F4;">felt like home</em>. The community, the energy, the opportunity to truly make a difference — it all aligned with the life and practice they had envisioned.</p>
+        <p style="margin-top:16px;">Together, with combined experience, knowledge, and a shared passion for natural health, their goal is simple: to help every person and family in Lee's Summit achieve better health and a better quality of life through neurologically-based chiropractic care.</p>
+      </div>
+      <div class="together-card">
+        <div class="together-card-title">Their Journey Together</div>
+        <div class="journey-steps">
+          <div class="journey-step">
+            <div class="journey-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="journey-step-text">
+              <strong>Logan University, Chesterfield, MO</strong>
+              <span>Where they met and both earned their Doctorates of Chiropractic</span>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <div class="journey-step-text">
+              <strong>3 Years of Separate Growth</strong>
+              <span>Dr. Kristen in Hendersonville, TN — Dr. Greg in Newburgh, NY</span>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+            </div>
+            <div class="journey-step-text">
+              <strong>Engaged &amp; Midwest-Bound</strong>
+              <span>Explored multiple cities together before Lee's Summit felt like home</span>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="journey-step-text">
+              <strong>Essential Chiropractic Opens</strong>
+              <span>419A SW Ward Rd., Lee's Summit — their home and yours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values-section">
+  <div class="section-inner">
+    <div class="values-header">
+      <div class="section-label"><span></span>What We Believe</div>
+      <h2 class="section-title">The Philosophy Behind Our Practice</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>Natural Health First</h3>
+        <p>We believe the body has an innate ability to heal when the nervous system is free of interference. Our mission is to remove those barriers — without drugs or surgery — and let your body do what it was designed to do.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path></svg>
+        </div>
+        <h3>Care for the Whole Family</h3>
+        <p>From newborns to seniors, we're proud to serve entire families in Lee's Summit. Every member of your household — at any stage of life — deserves access to safe, gentle, and effective chiropractic care.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </div>
+        <h3>Community-Rooted Care</h3>
+        <p>Lee's Summit is home — not just a market. Our mission is to build a healthier community for generations to come. We're invested in this city and the people who make it great, and we show up every day to prove it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section" id="book">
+  <div class="section-inner">
+    <div class="booking-grid">
+      <div class="booking-left">
+        <div class="section-label"><span></span>New Patients Welcome</div>
+        <h2>Ready to Meet Drs. Kristen &amp; Greg?</h2>
+        <p>Book your first visit online. We'll take the time to get to know you, understand your health history, and create a personalized care plan — no rush, no pressure.</p>
+        <ul class="perk-list">
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            New patients of all ages welcome
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Personalized care — never one-size-fits-all
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Same-week appointments often available
+          </li>
+          <li>
+            <div class="perk-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>
+            Serving Lee's Summit, Kansas City &amp; surrounding areas
+          </li>
+        </ul>
+        <div class="phone-block">
+          <div class="label">Prefer to call?</div>
+          <a href="tel:+18168951800">(816) 895-1800</a>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <h3>Book Your First Visit</h3>
+          <p class="form-sub">Fill out the form and we'll be in touch within one business day.</p>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/4MNooLLRv4dy2oRUc7Fe"
+            style="width:100%;height:100%;border:none;border-radius:3px;min-height:520px;display:block;"
+            id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Website Contact Form"
+            data-height="undefined"
+            data-layout-iframe-id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-form-id="4MNooLLRv4dy2oRUc7Fe"
+            title="Website Contact Form"
+          ></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Logo%20tight.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div>(816) 895-1800</div>
+      <div style="margin-top:4px;">© 2025 Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
