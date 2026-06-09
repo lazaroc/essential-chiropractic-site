@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fill Out Your Forms Online | New Patient Paperwork | Essential Chiropractic Lee's Summit, MO</title>
+  <meta name="description" content="Save time before your first visit — complete your new patient forms online. Adult, pregnancy, pediatric, and neuropathy intake forms for Essential Chiropractic in Lee's Summit, MO. Call (816) 895-1800.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > .nav-dropdown-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 26px 0; cursor: pointer; }
+    .nav-dropdown-toggle svg { width: 11px; height: 11px; transition: transform 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-toggle svg { transform: rotate(180deg); }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px); background: var(--white); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 16px 40px rgba(13,36,72,0.14); padding: 8px; list-style: none; min-width: 232px; opacity: 0; visibility: hidden; transition: opacity 0.2s, transform 0.2s, visibility 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-dropdown-menu li { width: 100%; }
+    .nav-dropdown-menu a { display: block; padding: 9px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; color: var(--text-mid); white-space: nowrap; }
+    .nav-dropdown-menu a.active { color: var(--blue-brand); }
+    .nav-dropdown-menu a:hover { background: var(--cream); color: var(--blue-brand); }
+
+    /* SHARED */
+    section { padding: 100px 32px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .section-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    h2.section-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 20px; }
+    .section-desc { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; max-width: 560px; }
+    .btn-ghost-dark { border: 1.5px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 32px; border-radius: 8px; font-size: 15px; font-weight: 500; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s; }
+    .btn-ghost-dark:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(to bottom, rgba(8,20,46,0.72) 0%, rgba(8,20,46,0.6) 100%), url('https://raw.githubusercontent.com/lazaroc/essential/main/Essential%20Chiropractic/Photos/Essential%20Chiropractic%20Softwave%20Treatment%20lees%20summit%2010.jpeg') center/cover no-repeat; padding: 140px 32px 100px; position: relative; overflow: hidden; text-align: center; }
+    .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .page-hero::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .page-hero-inner { max-width: 780px; margin: 0 auto; position: relative; z-index: 1; }
+    .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 24px; }
+    .page-hero-eyebrow span { display: inline-block; width: 24px; height: 1px; background: var(--blue-brand); }
+    .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .page-hero h1 em { font-style: italic; color: #7EC4F4; }
+    .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.75); font-weight: 300; margin: 0 auto 40px; max-width: 600px; }
+    .page-hero-actions { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .btn-hero { background: var(--blue-brand); color: var(--white); padding: 18px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(30,120,212,0.4); transition: background 0.2s, transform 0.15s; }
+    .btn-hero:hover { background: #1665B8; transform: translateY(-2px); }
+
+    /* INTRO */
+    .intro { background: var(--white); text-align: center; padding-bottom: 56px; }
+    .intro .section-inner { max-width: 760px; }
+    .intro .section-label { justify-content: center; }
+    .intro p { font-size: 18px; color: var(--text-mid); font-weight: 300; line-height: 1.75; }
+
+    /* FORMS GRID */
+    .forms { background: var(--cream); padding-top: 56px; }
+    .forms-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .form-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 36px 28px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+    .form-card:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(13,36,72,0.12); border-color: var(--blue-brand); }
+    .form-icon { width: 60px; height: 60px; border-radius: 15px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+    .form-icon svg { width: 28px; height: 28px; color: var(--blue-brand); }
+    .form-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; line-height: 1.15; color: var(--blue-deep); margin-bottom: 6px; }
+    .form-card .who { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: var(--blue-brand); text-transform: uppercase; margin-bottom: 14px; }
+    .form-card p { font-size: 14px; color: var(--text-mid); font-weight: 300; line-height: 1.65; margin-bottom: 28px; flex-grow: 1; }
+    .form-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; background: var(--blue-brand); color: var(--white); padding: 13px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .form-btn:hover { background: #1665B8; transform: translateY(-1px); }
+    .form-btn svg { width: 14px; height: 14px; }
+
+    /* HELP STRIP */
+    .help { background: var(--white); }
+    .help-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .help-item { padding: 28px; background: var(--cream); border-radius: 16px; border: 1px solid var(--border); }
+    .help-item-icon { width: 44px; height: 44px; border-radius: 11px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .help-item-icon svg { width: 21px; height: 21px; color: var(--blue-brand); }
+    .help-item h4 { font-size: 16px; font-weight: 600; color: var(--blue-deep); margin-bottom: 8px; }
+    .help-item p { font-size: 14px; color: var(--text-mid); font-weight: 300; line-height: 1.65; }
+
+    /* CTA */
+    .cta-strip { background: var(--blue-deep); text-align: center; }
+    .cta-strip h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 40px); color: var(--white); margin-bottom: 14px; }
+    .cta-strip p { font-size: 17px; color: rgba(255,255,255,0.72); font-weight: 300; max-width: 520px; margin: 0 auto 32px; }
+    .cta-strip-actions { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) { .forms-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 900px) {
+      .help-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-copy { text-align: center; }
+    }
+    @media (max-width: 600px) {
+      section { padding: 64px 20px; }
+      .page-hero { padding: 110px 20px 72px; }
+      .forms-grid { grid-template-columns: 1fr; }
+    }
+
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="Photos/Essential%20Chiropractic%20-%20Chiropractor%20Lees%20Summit%20MO%20-%20Logo.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#contact" class="nav-dropdown-toggle">Contact <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"></path></svg></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="paperwork.html" class="active">Fill Out Your Forms Online</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact" class="nav-cta">Schedule Now</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span></span>New Patients · Lee's Summit, MO</div>
+    <h1>Fill Out Your<br><em>Forms Online</em></h1>
+    <p class="page-hero-desc">Save time at your first visit. Complete your new patient paperwork ahead of time from any device — just choose the form that fits you below.</p>
+    <div class="page-hero-actions">
+      <a href="#forms" class="btn-hero">Choose Your Form</a>
+      <a href="tel:+18168951800" class="btn-ghost-dark">Call (816) 895-1800</a>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="section-inner">
+    <div class="section-label"><span></span>Before Your Visit</div>
+    <h2 class="section-title">Get a Head Start</h2>
+    <p>Filling out your paperwork online means less time in the waiting room and more time focused on your care. Please complete the form that applies to you as thoroughly as possible — it helps us understand your health needs and serve you better.</p>
+  </div>
+</section>
+
+<!-- FORMS GRID -->
+<section class="forms" id="forms">
+  <div class="section-inner">
+    <div class="forms-grid">
+
+      <!-- Adult -->
+      <div class="form-card">
+        <div class="form-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+        <h3>Adult Forms</h3>
+        <div class="who">New Adult Patients</div>
+        <p>The standard health profile for new adult practice members. Start here if you're an adult beginning care with us.</p>
+        <a class="form-btn" href="https://essentialchiropracticls.medforward.com/FillOutForm.aspx?formname=Health_Profile" target="_blank" rel="noopener">Fill Out Form <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+      </div>
+
+      <!-- Pregnancy -->
+      <div class="form-card">
+        <div class="form-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 013 3 3 3 0 01-3 3 3 3 0 01-3-3 3 3 0 013-3z"></path><path d="M12 8c2 0 3.5 1.5 3.5 4 0 2-1 3-1 5a3 3 0 01-6 0c0-1.5.5-2.5.5-4"></path></svg></div>
+        <h3>Pregnancy Forms</h3>
+        <div class="who">Expecting Mothers</div>
+        <p>A health profile tailored for pregnancy. Choose this form if you are currently expecting so we can care for you safely.</p>
+        <a class="form-btn" href="https://essentialchiropracticls.medforward.com/FillOutForm.aspx?formname=Pregnancy_Health_Profile" target="_blank" rel="noopener">Fill Out Form <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+      </div>
+
+      <!-- Pediatric -->
+      <div class="form-card">
+        <div class="form-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="6" r="3"></circle><path d="M12 9v7M8 21l4-5 4 5M6 13c0-1 2-2 6-2s6 1 6 2"></path></svg></div>
+        <h3>Pediatric Forms</h3>
+        <div class="who">Children Under 10</div>
+        <p>The pediatric healthcare form for our youngest patients. Use this for any child less than 10 years old.</p>
+        <a class="form-btn" href="https://essentialchiropracticls.medforward.com/FillOutForm.aspx?formname=Pediatric_Healthcare_Form" target="_blank" rel="noopener">Fill Out Form <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+      </div>
+
+      <!-- Neuropathy -->
+      <div class="form-card">
+        <div class="form-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+        <h3>Neuropathy Forms</h3>
+        <div class="who">Neuropathy Patients</div>
+        <p>The new patient form for our neuropathy program. Choose this if you're starting care for nerve pain, tingling, or numbness.</p>
+        <a class="form-btn" href="https://essentialchiropracticls.medforward.com/FillOutForm.aspx?formname=Neuropathy_New_Patient_Form" target="_blank" rel="noopener">Fill Out Form <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HELP STRIP -->
+<section class="help">
+  <div class="section-inner">
+    <div class="section-label"><span></span>Good to Know</div>
+    <h2 class="section-title" style="margin-bottom:48px;">A Few Quick Tips</h2>
+    <div class="help-grid">
+      <div class="help-item">
+        <div class="help-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+        <h4>Takes Just a Few Minutes</h4>
+        <p>Complete your form on a phone, tablet, or computer — whatever's easiest. It opens in a new tab so you won't lose this page.</p>
+      </div>
+      <div class="help-item">
+        <div class="help-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg></div>
+        <h4>Pick the Right Form</h4>
+        <p>Not sure which one to use? Choose the form that best matches you — adult, pregnancy, pediatric (under 10), or neuropathy.</p>
+      </div>
+      <div class="help-item">
+        <div class="help-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.53 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012.44 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9a16 16 0 006 6l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg></div>
+        <h4>Questions? Call Us</h4>
+        <p>If anything's unclear or you'd rather fill out forms in person, give us a call at <a href="tel:+18168951800" style="color:var(--blue-brand);text-decoration:none;font-weight:600;">(816) 895-1800</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="section-inner">
+    <h2>Haven't Booked Yet?</h2>
+    <p>Forms are step one. If you still need to schedule your first visit, we'd love to get you on the calendar.</p>
+    <div class="cta-strip-actions">
+      <a href="index.html#contact" class="btn-hero">Schedule Your Appointment</a>
+      <a href="tel:+18168951800" class="btn-ghost-dark">Call (816) 895-1800</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="Photos/Essential%20Chiropractic%20-%20Chiropractor%20Lees%20Summit%20MO%20-%20Logo.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="paperwork.html">Patient Forms</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div><a href="tel:+18168951800" style="color:inherit;text-decoration:none;">(816) 895-1800</a></div>
+      <div style="margin-top:4px;">© <span class="cur-year">2026</span> Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.querySelectorAll(".cur-year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+</body>
+</html>
