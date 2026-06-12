@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pediatric Chiropractor Lee's Summit, MO | Essential Chiropractic</title>
+  <meta name="description" content="Gentle pediatric chiropractic care in Lee's Summit. Safe for newborns through teens. Support for colic, reflux, ear infections, and more. Book your child's visit.">
+  <link rel="canonical" href="https://www.essentialchiropracticls.com/services/pediatric-chiropractor-lees-summit">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > .nav-dropdown-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 26px 0; cursor: pointer; }
+    .nav-dropdown-toggle svg { width: 11px; height: 11px; transition: transform 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-toggle svg { transform: rotate(180deg); }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px); background: var(--white); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 16px 40px rgba(13,36,72,0.14); padding: 8px; list-style: none; min-width: 232px; opacity: 0; visibility: hidden; transition: opacity 0.2s, transform 0.2s, visibility 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-dropdown-menu li { width: 100%; }
+    .nav-dropdown-menu a { display: block; padding: 9px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; color: var(--text-mid); white-space: nowrap; }
+    .nav-dropdown-menu a:hover { background: var(--cream); color: var(--blue-brand); }
+
+    /* SHARED */
+    section { padding: 100px 32px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .section-label span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    h2.section-title { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 20px; }
+    .section-desc { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; max-width: 620px; }
+    .prose p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.8; }
+    .prose p + p { margin-top: 18px; }
+    .btn-ghost-dark { border: 1.5px solid rgba(255,255,255,0.3); color: var(--white); padding: 16px 32px; border-radius: 8px; font-size: 15px; font-weight: 500; text-decoration: none; display: inline-block; transition: border-color 0.2s, background 0.2s; }
+    .btn-ghost-dark:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+    .btn-primary { background: var(--blue-brand); color: var(--white); padding: 16px 34px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 4px 16px rgba(30,120,212,0.28); transition: background 0.2s, transform 0.15s; }
+    .btn-primary:hover { background: #1665B8; transform: translateY(-2px); }
+
+    /* PAGE HERO */
+    .page-hero { background: linear-gradient(to bottom, rgba(8,20,46,0.72) 0%, rgba(8,20,46,0.62) 100%), url('Photos/Essential%20Chiropractic%20Softwave%20Treatment%20lees%20summit%205.jpeg') center/cover no-repeat; padding: 140px 32px 96px; position: relative; overflow: hidden; text-align: center; }
+    .page-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .page-hero::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+    .page-hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #7EC4F4; margin-bottom: 24px; }
+    .page-hero-eyebrow span { display: inline-block; width: 24px; height: 1px; background: #7EC4F4; }
+    .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(36px, 4.5vw, 60px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
+    .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.78); font-weight: 300; margin: 0 auto 36px; max-width: 600px; }
+    .page-hero-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn-hero { background: var(--blue-brand); color: var(--white); padding: 18px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(30,120,212,0.4); transition: background 0.2s, transform 0.15s; }
+    .btn-hero:hover { background: #1665B8; transform: translateY(-2px); }
+
+    /* TRUST STRIP */
+    .trust-strip { display: flex; align-items: stretch; justify-content: center; gap: 0; margin-top: 48px; flex-wrap: wrap; }
+    .trust-item { display: flex; flex-direction: column; align-items: center; padding: 4px 36px; border-right: 1px solid rgba(255,255,255,0.15); max-width: 260px; }
+    .trust-item:last-child { border-right: none; }
+    .trust-top { font-family: 'DM Serif Display', serif; font-size: 19px; font-style: italic; color: var(--white); display: flex; align-items: center; gap: 6px; }
+    .trust-top .stars { color: var(--gold); font-style: normal; letter-spacing: 1px; }
+    .trust-sub { font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; }
+
+    /* WHY US PILLARS */
+    .why-section { background: var(--cream); }
+    .why-header { text-align: center; margin-bottom: 56px; }
+    .why-header .section-label { justify-content: center; }
+    .why-header p { font-size: 17px; color: var(--text-mid); font-weight: 300; max-width: 600px; margin: 0 auto; }
+    .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .pillar-card { background: var(--white); border-radius: 20px; padding: 40px 32px; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+    .pillar-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(13,36,72,0.08); border-color: var(--blue-brand); }
+    .pillar-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+    .pillar-icon svg { width: 24px; height: 24px; color: var(--blue-brand); }
+    .pillar-card h3 { font-size: 18px; font-weight: 600; color: var(--blue-deep); margin-bottom: 10px; }
+    .pillar-card p { font-size: 14px; color: var(--text-mid); line-height: 1.65; font-weight: 300; }
+
+    /* WHAT IS / TWO-COL PROSE */
+    .info-section { background: var(--white); }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    .info-aside { background: var(--cream); border: 1px solid var(--border); border-radius: 20px; padding: 36px; }
+    .info-aside h3 { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--blue-deep); margin-bottom: 18px; }
+    .info-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .info-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 15px; color: var(--text-mid); line-height: 1.55; font-weight: 300; }
+    .info-check { width: 22px; height: 22px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .info-check svg { width: 11px; height: 11px; color: var(--blue-brand); }
+
+    /* SAFE CALLOUT */
+    .safe-section { background: var(--blue-deep); }
+    .safe-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 64px; align-items: center; }
+    .safe-yes { font-family: 'DM Serif Display', serif; font-size: clamp(42px, 5vw, 64px); line-height: 1.05; color: var(--white); }
+    .safe-yes em { font-style: italic; color: #7EC4F4; }
+    .safe-yes .qual { display: block; font-size: 16px; font-family: 'DM Sans', sans-serif; color: rgba(255,255,255,0.6); font-weight: 300; margin-top: 14px; }
+    .safe-grid .prose p { color: rgba(255,255,255,0.74); }
+    .safe-grid .prose p strong { color: var(--white); font-weight: 500; }
+    .safe-note { margin-top: 22px; border-left: 3px solid var(--blue-brand); padding-left: 22px; font-family: 'DM Serif Display', serif; font-style: italic; font-size: 19px; color: rgba(255,255,255,0.9); line-height: 1.5; }
+
+    /* CONDITION CARDS */
+    .cond-section { background: var(--cream); }
+    .cond-header { text-align: center; margin-bottom: 56px; }
+    .cond-header .section-label { justify-content: center; }
+    .cond-header p { font-size: 17px; color: var(--text-mid); font-weight: 300; max-width: 600px; margin: 0 auto; }
+    .cond-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .cond-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 30px; transition: transform 0.2s, box-shadow 0.2s; }
+    .cond-card:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(13,36,72,0.08); }
+    .cond-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .cond-icon svg { width: 22px; height: 22px; color: var(--blue-brand); }
+    .cond-card h3 { font-size: 17px; font-weight: 600; color: var(--blue-deep); margin-bottom: 10px; }
+    .cond-card p { font-size: 14px; color: var(--text-mid); line-height: 1.65; font-weight: 300; }
+    .disclaimer { margin-top: 28px; padding: 16px 22px; background: var(--blue-light); border-radius: 10px; font-size: 13px; color: var(--text-mid); text-align: center; line-height: 1.6; }
+
+    /* TRT BAND */
+    .trt-band { background: var(--white); }
+    .trt-band-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .tomato-card { background: var(--cream); border: 1px solid var(--border); border-radius: 20px; padding: 40px; }
+    .tomato-card .big { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 24px; color: var(--blue-deep); line-height: 1.45; }
+    .tomato-card .label { display: inline-block; margin-bottom: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue-brand); }
+
+    /* PROCESS */
+    .process-section { background: var(--cream); }
+    .process-header { text-align: center; margin-bottom: 64px; }
+    .process-header .section-label { justify-content: center; }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 28px; left: calc(12.5% + 20px); right: calc(12.5% + 20px); height: 1px; background: var(--border); z-index: 0; }
+    .process-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+    .step-circle { width: 56px; height: 56px; border-radius: 50%; background: var(--blue-brand); color: var(--white); font-family: 'DM Serif Display', serif; font-size: 20px; font-style: italic; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; box-shadow: 0 4px 16px rgba(30,120,212,0.3); }
+    .process-step h4 { font-size: 16px; font-weight: 600; color: var(--blue-deep); margin-bottom: 8px; }
+    .process-step p { font-size: 14px; color: var(--text-mid); font-weight: 300; line-height: 1.6; }
+    .stay-note { max-width: 760px; margin: 48px auto 0; display: flex; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 20px 26px; }
+    .stay-note .stay-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .stay-note .stay-icon svg { width: 20px; height: 20px; color: var(--blue-brand); }
+    .stay-note p { font-size: 15px; color: var(--text-mid); font-weight: 300; }
+    .stay-note p strong { color: var(--blue-deep); font-weight: 600; }
+    .process-cta { text-align: center; margin-top: 48px; }
+
+    /* DOCTORS */
+    .doctor-section { padding: 100px 32px; }
+    .doctor-section.bg-cream { background: var(--cream); }
+    .doctor-section.bg-white { background: var(--white); }
+    .doctors-header { text-align: center; max-width: 720px; margin: 0 auto 64px; }
+    .doctors-header .section-label { justify-content: center; }
+    .doctor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .doctor-grid.reverse { direction: rtl; }
+    .doctor-grid.reverse > * { direction: ltr; }
+    .doctor-photo-wrap { position: relative; }
+    .doctor-photo-card { border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(13,36,72,0.14); background: linear-gradient(160deg, #0d2448 0%, #1265ba 55%, #1e78d4 100%); aspect-ratio: 3/4; max-height: 520px; }
+    .doctor-photo-card img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .doctor-photo-card .img-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; min-height: 420px; }
+    .doctor-photo-card .img-fallback svg { width: 64px; height: 64px; opacity: 0.25; color: var(--white); }
+    .doctor-name-plate { position: absolute; bottom: -20px; left: 24px; right: 24px; background: var(--white); border-radius: 14px; padding: 16px 20px; box-shadow: 0 12px 32px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-between; }
+    .doctor-name-plate-name { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--blue-deep); line-height: 1.2; }
+    .doctor-name-plate-title { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+    .trt-badge { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue-brand); background: var(--blue-light); padding: 6px 10px; border-radius: 6px; white-space: nowrap; }
+    .doctor-content { padding-bottom: 20px; }
+    .doctor-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-brand); margin-bottom: 16px; }
+    .doctor-eyebrow span { display: inline-block; width: 20px; height: 1px; background: var(--blue-brand); }
+    .doctor-name { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 8px; }
+    .doctor-title { font-size: 15px; color: var(--text-light); font-weight: 400; margin-bottom: 24px; }
+    .doctor-bio { display: flex; flex-direction: column; gap: 16px; }
+    .doctor-bio p { font-size: 16px; color: var(--text-mid); line-height: 1.75; font-weight: 300; }
+    .doctor-bio p strong { color: var(--text-dark); font-weight: 500; }
+
+    /* REVIEWS */
+    .reviews-section { background: var(--blue-deep); }
+    .reviews-header { text-align: center; margin-bottom: 48px; }
+    .reviews-header .section-label { justify-content: center; color: var(--blue-brand); }
+    .reviews-header .section-label span { background: var(--blue-brand); }
+    .reviews-header h2 { color: var(--white); }
+    .featured-review { max-width: 800px; margin: 0 auto 40px; text-align: center; }
+    .featured-review .stars { color: var(--gold); letter-spacing: 3px; font-size: 18px; margin-bottom: 20px; }
+    .featured-review blockquote { font-family: 'DM Serif Display', serif; font-style: italic; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.5; color: var(--white); margin-bottom: 20px; }
+    .featured-review .author { font-size: 14px; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; }
+    .reviews-link { text-align: center; margin-top: 32px; }
+    .reviews-link a { color: #7EC4F4; font-size: 15px; font-weight: 500; text-decoration: none; }
+    .reviews-link a:hover { text-decoration: underline; }
+
+    /* CONTACT / SERVICE AREA */
+    .contact { background: var(--white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 28px; }
+    .hours-table tr { border-bottom: 1px solid var(--border); }
+    .hours-table tr:last-child { border-bottom: none; }
+    .hours-table td { padding: 14px 0; font-size: 15px; }
+    .hours-table td:first-child { color: var(--text-mid); }
+    .hours-table td:last-child { text-align: right; font-weight: 500; color: var(--blue-deep); }
+    .hours-table .closed { color: var(--text-light); font-weight: 300; }
+    .contact-info { margin-top: 32px; }
+    .contact-item { display: flex; align-items: flex-start; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .contact-item:last-child { border-bottom: none; }
+    .contact-item-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-item-icon svg { width: 18px; height: 18px; color: var(--blue-brand); }
+    .contact-item-text { font-size: 14px; color: var(--text-light); margin-bottom: 2px; }
+    .contact-item-value { font-size: 16px; color: var(--text-dark); font-weight: 500; text-decoration: none; }
+    .contact-item-value:hover { color: var(--blue-brand); }
+    .area-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .area-tag { font-size: 13px; color: var(--text-mid); background: var(--cream); border: 1px solid var(--border); padding: 7px 14px; border-radius: 20px; }
+    .map-embed { width: 100%; height: 100%; min-height: 460px; border: 0; border-radius: 16px; box-shadow: 0 16px 40px rgba(13,36,72,0.1); display: block; }
+
+    /* NEW PATIENT SPECIAL / BOOKING */
+    .booking-section { background: var(--cream); }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .booking-left h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--blue-deep); margin-bottom: 16px; }
+    .booking-left > p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; margin-bottom: 28px; }
+    .special-card { background: var(--blue-deep); border-radius: 20px; padding: 36px; color: var(--white); }
+    .special-tag { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #7EC4F4; margin-bottom: 14px; }
+    .special-price { font-family: 'DM Serif Display', serif; font-size: 52px; line-height: 1; color: var(--white); display: flex; align-items: baseline; gap: 14px; }
+    .special-price .was { font-size: 20px; color: rgba(255,255,255,0.45); text-decoration: line-through; }
+    .special-card p { font-size: 14px; color: rgba(255,255,255,0.72); font-weight: 300; line-height: 1.65; margin: 16px 0 24px; }
+    .special-card .btn-special { display: inline-block; width: 100%; text-align: center; background: var(--blue-brand); color: var(--white); padding: 16px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.15s; box-shadow: 0 4px 16px rgba(30,120,212,0.4); }
+    .special-card .btn-special:hover { background: #1665B8; transform: translateY(-1px); }
+    .special-card .call-line { text-align: center; font-size: 14px; margin-top: 16px; color: rgba(255,255,255,0.6); }
+    .special-card .call-line a { color: #7EC4F4; text-decoration: none; font-weight: 500; }
+    .form-card { background: var(--white); border-radius: 20px; padding: 40px; border: 1px solid var(--border); }
+    .form-card h3 { font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--blue-deep); margin-bottom: 4px; }
+    .form-card .form-sub { font-size: 14px; color: var(--text-light); margin-bottom: 24px; }
+
+    /* FAQ */
+    .faq-section { background: var(--white); }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header .section-label { justify-content: center; }
+    .faq-list { max-width: 840px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--cream); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .faq-item summary { list-style: none; cursor: pointer; padding: 22px 26px; display: flex; justify-content: space-between; align-items: center; gap: 18px; font-size: 16px; font-weight: 600; color: var(--blue-deep); }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-icon { flex-shrink: 0; width: 22px; height: 22px; color: var(--blue-brand); transition: transform 0.25s; }
+    .faq-item[open] .faq-icon { transform: rotate(45deg); }
+    .faq-answer { padding: 0 26px 24px; font-size: 15px; color: var(--text-mid); font-weight: 300; line-height: 1.75; }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .pillars-grid { grid-template-columns: 1fr; }
+      .info-grid, .safe-grid, .trt-band-grid, .doctor-grid, .doctor-grid.reverse, .contact-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; direction: ltr; }
+      .cond-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+      .doctor-photo-card { aspect-ratio: 4/3; max-height: 360px; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-copy { text-align: center; }
+      .trust-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); padding: 14px 20px; }
+      .trust-item:last-child { border-bottom: none; }
+    }
+    @media (max-width: 600px) {
+      section, .doctor-section { padding: 64px 20px; }
+      .page-hero { padding: 110px 20px 72px; }
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="Photos/Essential%20Chiropractic%20-%20Chiropractor%20Lees%20Summit%20MO%20-%20Logo.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle active">Services <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"></path></svg></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="chiropractic.html">Chiropractic</a></li>
+          <li><a href="pediatric.html" style="background:var(--cream);color:var(--blue-brand);">Pediatric</a></li>
+          <li><a href="pregnancy.html">Pregnancy</a></li>
+          <li><a href="auto-accident.html">Auto Accident</a></li>
+          <li><a href="softwave.html">SoftWave</a></li>
+          <li><a href="neuropathy.html">Neuropathy</a></li>
+        </ul>
+      </li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#contact" class="nav-dropdown-toggle">Contact <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"></path></svg></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="paperwork.html">Fill Out Your Forms Online</a></li>
+        </ul>
+      </li>
+      <li><a href="#book" class="nav-cta">Book Online</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- SECTION 1: HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><span></span>Pediatric Chiropractic · Lee's Summit, MO</div>
+    <h1>Pediatric Chiropractor in Lee's Summit, MO</h1>
+    <p class="page-hero-desc">Gentle, family-focused chiropractic care for newborns, infants, and children. Serving Lee's Summit families since 2019.</p>
+    <div class="page-hero-actions">
+      <a href="#book" class="btn-hero">Book Your Child's First Visit</a>
+      <a href="tel:+18168951800" class="btn-ghost-dark">(816) 895-1800</a>
+    </div>
+    <div class="trust-strip">
+      <div class="trust-item">
+        <span class="trust-top"><span class="stars">★</span> 4.9 on Google</span>
+        <span class="trust-sub">458+ Reviews</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-top">Torque Release Technique</span>
+        <span class="trust-sub">Gentle, Low-Force Care</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-top">Family Practice</span>
+        <span class="trust-sub">Heart of Lee's Summit</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: WHY PARENTS TRUST US -->
+<section class="why-section">
+  <div class="section-inner">
+    <div class="why-header">
+      <div class="section-label"><span></span>Why Parents Choose Us</div>
+      <h2 class="section-title">Why Lee's Summit Parents Trust Us With Their Children</h2>
+      <p>Choosing a chiropractor for your child is a big decision. Here is what sets our care apart.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        </div>
+        <h3>Training in Prenatal &amp; Pediatric Care</h3>
+        <p>Both Dr. Greg Davis and Dr. Kristen Ras-Davis have extensive experience and training in prenatal and pediatric chiropractic care. We see infants, children, expecting mothers, and the whole family in the same office.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+        </div>
+        <h3>Gentle, Instrument-Assisted Adjustments</h3>
+        <p>We use Torque Release Technique, a low-force method with no twisting and no popping. The pressure used on a newborn is similar to the pressure you would use to check whether a tomato is ripe.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10"></circle></svg>
+        </div>
+        <h3>A Thorough Approach From Day One</h3>
+        <p>We combine our doctors' physical exams with thermography and neurological assessments to get a complete picture of how your child's nervous system is functioning, so our recommendations are informed and age-appropriate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: WHAT IS PEDIATRIC CHIROPRACTIC CARE -->
+<section class="info-section">
+  <div class="section-inner">
+    <div class="info-grid">
+      <div>
+        <div class="section-label"><span></span>The Basics</div>
+        <h2 class="section-title">What Is Pediatric Chiropractic Care?</h2>
+        <div class="prose">
+          <p>Pediatric chiropractic care is the assessment and gentle adjustment of a child's spine and nervous system, using techniques modified for their size, weight, and stage of development. The goal is to support the function of the nervous system, which controls how the body grows, heals, moves, and regulates itself.</p>
+          <p>A child's spine and nervous system go through rapid changes during the first few years of life. Birth itself, along with early milestones like rolling, crawling, walking, and the inevitable falls that come with learning to move, can place stress on the spine. As children grow into toddlers, school-age kids, and teens, posture, backpacks, screen time, and sports add new loads on the body.</p>
+          <p>Pediatric chiropractic care looks for areas of tension or restriction in the spine and uses gentle adjustments to help restore normal motion and nerve communication.</p>
+        </div>
+      </div>
+      <div class="info-aside">
+        <h3>Care that changes as your child grows</h3>
+        <ul class="info-list">
+          <li><div class="info-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Newborns &amp; infants — after birth and through early milestones</li>
+          <li><div class="info-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Toddlers — rolling, crawling, walking, and the falls along the way</li>
+          <li><div class="info-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>School-age kids — posture, backpacks, and screen time</li>
+          <li><div class="info-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2 6 5 9 10 3"></polyline></svg></div>Teens — sports training, growth, and postural strain</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: IS IT SAFE -->
+<section class="safe-section">
+  <div class="section-inner">
+    <div class="safe-grid">
+      <div>
+        <div class="section-label" style="color:var(--blue-brand);"><span></span>Safety First</div>
+        <div class="safe-yes">Yes — when performed by a chiropractor <em>trained in pediatric care.</em>
+          <span class="qual">A pediatric adjustment looks very different from an adult one. The pressure is very light, with no twisting, no popping, and no forceful manipulation.</span>
+        </div>
+      </div>
+      <div class="prose">
+        <p>Before any care begins, we complete a full intake covering your child's birth history, milestones, and any concerns you have. We then perform a gentle physical assessment to determine whether chiropractic care is <strong>appropriate</strong> and what techniques are best suited to your child's age and needs.</p>
+        <p class="safe-note">Your child stays with you during every visit. Parents are involved in every step of the process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: HOW IT CAN SUPPORT YOUR CHILD -->
+<section class="cond-section">
+  <div class="section-inner">
+    <div class="cond-header">
+      <div class="section-label"><span></span>Common Reasons Parents Visit</div>
+      <h2 class="section-title">How Pediatric Chiropractic Care Can Support Your Child</h2>
+      <p>Parents bring their children to our Lee's Summit office for many different reasons. Here are some of the most common.</p>
+    </div>
+    <div class="cond-grid">
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg></div>
+        <h3>Colic, Reflux &amp; Digestive Discomfort</h3>
+        <p>Infants who struggle with colic, reflux, gas, or general fussiness after feeding may be experiencing tension in the upper neck or middle back — areas closely connected to the nerves that supply the digestive system. Gentle adjustments aim to support normal nerve communication and ease that tension.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8.5a6 6 0 0112 0c0 2-1 3-1 5a3 3 0 01-6 0"></path><path d="M9 18a2 2 0 004 0"></path></svg></div>
+        <h3>Ear Infections &amp; Recurring Ear Issues</h3>
+        <p>The eustachian tubes, which drain the middle ear, can become restricted when there is tension in the upper neck. Many parents bring their children in to support drainage and overall ear health, particularly when ear infections become a recurring pattern. Chiropractic care is not a substitute for medical evaluation of an active infection.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6-4.35-6-10a6 6 0 0112 0c0 5.65-6 10-6 10z"></path><circle cx="12" cy="11" r="2.2"></circle></svg></div>
+        <h3>Breech Presentation &amp; the Webster Technique</h3>
+        <p>The Webster Technique is a specific chiropractic analysis and adjustment used during pregnancy. It focuses on the pelvis and surrounding ligaments and is often chosen by mothers whose babies are in a breech position. While the care is given to the mother, the goal is to support optimal positioning for the baby.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20"></path><path d="M5 9c0-3 3-5 7-5"></path><path d="M19 13c0 4-3 7-7 7"></path></svg></div>
+        <h3>Constipation &amp; Bowel Issues</h3>
+        <p>The nerves that influence the digestive tract exit the spine at multiple levels. When children experience chronic constipation, gentle adjustments aim to support the nerves involved in normal bowel function alongside other lifestyle factors like hydration and diet.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="6" r="3"></circle><path d="M12 9v6"></path><path d="M9 13l3-2 3 2"></path><path d="M8 21l4-4 4 4"></path></svg></div>
+        <h3>Torticollis &amp; Neck Tension</h3>
+        <p>Some babies are born with or develop a strong preference for turning their head in one direction. This pattern, often called torticollis, can be addressed with very gentle cervical work. Our approach focuses on releasing tension and supporting full, comfortable range of motion.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a6 6 0 00-6 6c0 4 6 12 6 12s6-8 6-12a6 6 0 00-6-6z" opacity="0"></path><path d="M3 12h2l2-7 4 18 3-9 2 4h5"></path></svg></div>
+        <h3>Restlessness &amp; Sleep Disturbances</h3>
+        <p>When the nervous system is under tension, children often have a harder time settling, sleeping, or staying asleep. Parents often choose chiropractic care to support nervous system regulation as part of a broader healthy-sleep approach.</p>
+      </div>
+      <div class="cond-card">
+        <div class="cond-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2.5"></circle><path d="M12 7.5v6"></path><path d="M8 10h8"></path><path d="M9 22l3-8 3 8"></path><rect x="14" y="3" width="6" height="8" rx="1"></rect></svg></div>
+        <h3>Posture, Backpacks &amp; Growing Bodies</h3>
+        <p>For older children and teens, postural strain from school backpacks, screen use, and sports training can show up as headaches, neck tension, or fatigue. We assess posture, recommend simple changes at home and school, and use age-appropriate adjustments to support healthy spinal development.</p>
+      </div>
+    </div>
+    <div class="disclaimer">Chiropractic care is not a substitute for pediatric medical care. Please consult your child's pediatrician for medical concerns.</div>
+  </div>
+</section>
+
+<!-- SECTION 6: TORQUE RELEASE TECHNIQUE -->
+<section class="trt-band">
+  <div class="section-inner">
+    <div class="trt-band-grid">
+      <div>
+        <div class="section-label"><span></span>Our Technique</div>
+        <h2 class="section-title">Gentle Adjustments Using Torque Release Technique</h2>
+        <div class="prose">
+          <p>Torque Release Technique (TRT) is the primary method we use for our pediatric patients. It is an instrument-assisted technique that delivers a very low-force adjustment to specific points along the spine. There is no twisting and no popping.</p>
+          <p>Because the force is gentle and precise, TRT is well-suited for newborns, infants, toddlers, and children of every age. Many parents who were nervous about chiropractic care for their child are reassured the first time they see how light the contact actually is.</p>
+        </div>
+      </div>
+      <div class="tomato-card">
+        <span class="label">How gentle is it?</span>
+        <p class="big">"The pressure used on a newborn is similar to the pressure you would use to check whether a tomato is ripe."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: WHAT TO EXPECT -->
+<section class="process-section">
+  <div class="section-inner">
+    <div class="process-header">
+      <div class="section-label"><span></span>What to Expect</div>
+      <h2 class="section-title">Your Child's First Visit</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-circle">1</div>
+        <h4>Consultation</h4>
+        <p>We sit down with you to discuss your child's birth history, milestones, current concerns, and what you hope to get from chiropractic care.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">2</div>
+        <h4>Examination</h4>
+        <p>A gentle assessment of the spine, posture, range of motion, and reflexes. For older children, this may include thermography and neurological screening.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">3</div>
+        <h4>First Adjustment</h4>
+        <p>If appropriate, using gentle techniques modified for your child's age and size — no twisting and no popping.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">4</div>
+        <h4>Care Plan Discussion</h4>
+        <p>We explain what we found, what we recommend, and answer every question you have along the way.</p>
+      </div>
+    </div>
+    <div class="stay-note">
+      <div class="stay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+      <p><strong>You stay with your child.</strong> Parents are present and involved at every visit.</p>
+    </div>
+    <div class="process-cta">
+      <a href="#book" class="btn-primary">Book Your Child's First Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: MEET THE DOCTORS -->
+<div class="doctor-section bg-white" style="padding-bottom:48px;">
+  <div class="section-inner">
+    <div class="doctors-header">
+      <div class="section-label" style="justify-content:center;"><span></span>Meet Your Care Team</div>
+      <h2 class="section-title">The Lee's Summit Chiropractors Caring for Your Family</h2>
+    </div>
+  </div>
+</div>
+
+<section class="doctor-section bg-white" style="padding-top:0;" id="dr-greg">
+  <div class="section-inner">
+    <div class="doctor-grid">
+      <div class="doctor-photo-wrap">
+        <div class="doctor-photo-card">
+          <img src="Headshot.avif" alt="Dr. Greg Davis, Pediatric Chiropractor in Lee's Summit, MO" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-fallback" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+        </div>
+        <div class="doctor-name-plate">
+          <div>
+            <div class="doctor-name-plate-name">Dr. Greg Davis</div>
+            <div class="doctor-name-plate-title">Doctor of Chiropractic · Board Certified</div>
+          </div>
+          <div class="trt-badge">Certified TRT</div>
+        </div>
+      </div>
+      <div class="doctor-content">
+        <div class="doctor-eyebrow"><span></span>Meet the Doctor</div>
+        <h2 class="doctor-name">Dr. Greg Davis, D.C.</h2>
+        <p class="doctor-title">Doctor of Chiropractic · Co-Founder, Essential Chiropractic</p>
+        <div class="doctor-bio">
+          <p>Dr. Greg is a board-certified chiropractor and a central Illinois native. His athletic background — from high school standout to collegiate track athlete — gave him a firsthand appreciation for what the body can do when it functions at its best.</p>
+          <p>He earned his Doctor of Chiropractic from <strong>Logan University, College of Chiropractic</strong> and spent three years practicing at <strong>Innate Chiropractic in Newburgh, New York</strong> before bringing his expertise to Lee's Summit. He specializes in advanced, neurologically-based chiropractic techniques and provides care for patients of all ages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doctor-section bg-cream" id="dr-kristen">
+  <div class="section-inner">
+    <div class="doctor-grid reverse">
+      <div class="doctor-photo-wrap">
+        <div class="doctor-photo-card">
+          <img src="Dr_ K Headshot_JPG (1).avif" alt="Dr. Kristen Ras-Davis, Pediatric Chiropractor in Lee's Summit, MO" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="img-fallback" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+        </div>
+        <div class="doctor-name-plate">
+          <div>
+            <div class="doctor-name-plate-name">Dr. Kristen Ras-Davis</div>
+            <div class="doctor-name-plate-title">Doctor of Chiropractic · Summa Cum Laude</div>
+          </div>
+          <div class="trt-badge">Certified TRT</div>
+        </div>
+      </div>
+      <div class="doctor-content">
+        <div class="doctor-eyebrow"><span></span>Meet the Doctor</div>
+        <h2 class="doctor-name">Dr. Kristen Ras-Davis, D.C.</h2>
+        <p class="doctor-title">Doctor of Chiropractic · Co-Founder, Essential Chiropractic</p>
+        <div class="doctor-bio">
+          <p>Dr. Kristen earned her Bachelor's degree in Kinesiology from the <strong>University of Illinois at Champaign-Urbana</strong> before completing her Doctor of Chiropractic at <strong>Logan University</strong>, where she graduated Summa Cum Laude.</p>
+          <p>She spent her internship and three additional years at <strong>Stewart Chiropractic Center near Nashville, Tennessee</strong>, where she fell in love with chiropractic care. Together with Dr. Greg, she brings extensive training in prenatal and pediatric chiropractic care to Lee's Summit families.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: REVIEWS -->
+<section class="reviews-section">
+  <div class="section-inner">
+    <div class="reviews-header">
+      <div class="section-label"><span></span>Parent Stories</div>
+      <h2 class="section-title">What Lee's Summit Parents Say About Our Pediatric Care</h2>
+    </div>
+    <div class="featured-review">
+      <div class="stars">★★★★★</div>
+      <blockquote>"In just three weeks of treatment, my baby turned from feet down to head down. Christa had a normal, healthy labor three weeks after starting chiropractic care."</blockquote>
+      <div class="author">— Christa O., Lee's Summit</div>
+    </div>
+    <!-- Elfsight Google Reviews | Essential Chiropractic -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-c3c800b3-4dea-4104-86b4-1d92208ba012" data-elfsight-app-lazy></div>
+    <div class="reviews-link"><a href="https://www.google.com/search?q=Essential+Chiropractic+Lees+Summit+reviews" target="_blank" rel="noopener">See more reviews on Google →</a></div>
+  </div>
+</section>
+
+<!-- SECTION 10: SERVICE AREA / CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label"><span></span>Visit Us</div>
+        <h2 class="section-title">Serving Families Throughout the Lee's Summit Area</h2>
+        <p class="section-desc">Our office is located on SW Ward Rd. in Lee's Summit, conveniently located near Ward and Third Street. We welcome families from across the area.</p>
+        <div class="area-tags">
+          <span class="area-tag">Blue Springs</span>
+          <span class="area-tag">Raymore</span>
+          <span class="area-tag">Independence</span>
+          <span class="area-tag">Greenwood</span>
+          <span class="area-tag">Belton</span>
+          <span class="area-tag">Pleasant Hill</span>
+          <span class="area-tag">Lake Lotawana</span>
+        </div>
+        <table class="hours-table">
+          <tbody>
+            <tr><td>Monday</td><td>10:00 AM – 1:00 PM &nbsp;|&nbsp; 3:00 – 6:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>3:00 – 6:30 PM</td></tr>
+            <tr><td>Wednesday</td><td>10:00 AM – 1:00 PM &nbsp;|&nbsp; 3:00 – 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>10:00 AM – 1:00 PM &nbsp;|&nbsp; 3:00 – 6:00 PM</td></tr>
+            <tr><td>Friday</td><td class="closed">Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.53 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012.44 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9a16 16 0 006 6l.87-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg></div>
+            <div><div class="contact-item-text">Phone</div><a href="tel:+18168951800" class="contact-item-value">(816) 895-1800</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div><div class="contact-item-text">Email</div><a href="mailto:team@essentialchiropracticLS.com" class="contact-item-value">team@essentialchiropracticLS.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+            <div><div class="contact-item-text">Address</div><span class="contact-item-value">419A SW Ward Rd., Lee's Summit, MO 64081</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <iframe class="map-embed" src="https://www.google.com/maps?q=419A+SW+Ward+Rd,+Lee's+Summit,+MO+64081&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Essential Chiropractic location map" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 11: NEW PATIENT SPECIAL / BOOK -->
+<section class="booking-section" id="book">
+  <div class="section-inner">
+    <div class="booking-grid">
+      <div class="booking-left">
+        <div class="section-label"><span></span>New Patients Welcome</div>
+        <h2>Ready to Book Your Child's First Visit?</h2>
+        <p>If you have questions about whether chiropractic care is right for your child, the easiest step is to come in and meet us. We will sit down with you, listen, and explain what we recommend.</p>
+        <div class="special-card">
+          <div class="special-tag">New Patient Special</div>
+          <div class="special-price">$49 <span class="was">$225</span></div>
+          <p>Your $49 New Patient Exam includes a full consultation, examination, and report of findings. We will discuss whether chiropractic care is right for your child and answer every question along the way.</p>
+          <a href="https://promo.essentialchiropracticls.com/" target="_blank" rel="noopener" class="btn-special">Claim Your $49 New Patient Special</a>
+          <div class="call-line">Or call us at <a href="tel:+18168951800">(816) 895-1800</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="form-card">
+          <h3>Book Your Child's First Visit</h3>
+          <p class="form-sub">We'll reach out within one business day to confirm your appointment.</p>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/4MNooLLRv4dy2oRUc7Fe"
+            style="width:100%;height:100%;border:none;border-radius:3px;min-height:520px;display:block;"
+            id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Website Contact Form"
+            data-height="undefined"
+            data-layout-iframe-id="inline-4MNooLLRv4dy2oRUc7Fe"
+            data-form-id="4MNooLLRv4dy2oRUc7Fe"
+            title="Website Contact Form"
+          ></iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 12: FAQ -->
+<section class="faq-section">
+  <div class="section-inner">
+    <div class="faq-header">
+      <div class="section-label" style="justify-content:center;"><span></span>Common Questions</div>
+      <h2 class="section-title">Pediatric Chiropractic Care: Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is chiropractic care safe for babies and children?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Yes, when performed by a chiropractor trained in pediatric care. The pressure used during a pediatric adjustment is very light, with no twisting or popping. We tailor every adjustment to your child's age, size, and needs.</div>
+      </details>
+      <details class="faq-item">
+        <summary>At what age can my baby see a chiropractor?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Babies can be checked within the first few days of life. Many parents bring their newborns in soon after birth, especially if labor was long or involved interventions.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How is a pediatric adjustment different from an adult adjustment?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Pediatric adjustments use far less force, no twisting, and no popping. We rely on gentle, instrument-assisted techniques modified for your child's age and size.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can chiropractic help with colic and reflux?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Many parents bring their fussy infants to us specifically because of colic or reflux. We work on releasing tension in the upper spine and supporting nerve communication to the digestive system. Results vary by child.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can chiropractic help with ear infections?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Parents often choose chiropractic care to support healthy drainage of the middle ear, particularly when ear infections are recurring. Chiropractic care is not a substitute for medical care of an active infection.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can a chiropractor help support a breech baby?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">The Webster Technique is a specific chiropractic analysis used during pregnancy to support pelvic balance and optimal fetal positioning. Care is given to the mother, with the goal of supporting natural positioning for the baby.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How often will my child need to come in?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">That depends on what we find at the initial assessment and what you are hoping to address. We discuss a recommended schedule with you after the exam, and you are always in control of the care plan.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Does insurance cover pediatric chiropractic care?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Coverage varies by carrier and plan. Call us at (816) 895-1800 and we will help you confirm your coverage before your first visit.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What should I bring to my child's first appointment?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Bring your child's insurance information if applicable, a list of any current medications or concerns, and your child's pediatrician information. For infants, bring whatever helps keep them comfortable.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How will my child feel after their first adjustment?<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></summary>
+        <div class="faq-answer">Most children feel relaxed and unaffected, and many fall asleep during or after the visit. Some parents notice changes in sleep, mood, or digestion in the days that follow. Every child is different.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="Photos/Essential%20Chiropractic%20-%20Chiropractor%20Lees%20Summit%20MO%20-%20Logo.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="pediatric.html">Pediatric</a></li>
+      <li><a href="pregnancy.html">Pregnancy</a></li>
+      <li><a href="auto-accident.html">Auto Accident</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="paperwork.html">Patient Forms</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div><a href="tel:+18168951800" style="color:inherit;text-decoration:none;">(816) 895-1800</a></div>
+      <div style="margin-top:4px;">© <span class="cur-year">2026</span> Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is chiropractic care safe for babies and children?","acceptedAnswer":{"@type":"Answer","text":"Yes, when performed by a chiropractor trained in pediatric care. The pressure used during a pediatric adjustment is very light, with no twisting or popping. We tailor every adjustment to your child's age, size, and needs."}},
+    {"@type":"Question","name":"At what age can my baby see a chiropractor?","acceptedAnswer":{"@type":"Answer","text":"Babies can be checked within the first few days of life. Many parents bring their newborns in soon after birth, especially if labor was long or involved interventions."}},
+    {"@type":"Question","name":"How is a pediatric adjustment different from an adult adjustment?","acceptedAnswer":{"@type":"Answer","text":"Pediatric adjustments use far less force, no twisting, and no popping. We rely on gentle, instrument-assisted techniques modified for your child's age and size."}},
+    {"@type":"Question","name":"Can chiropractic help with colic and reflux?","acceptedAnswer":{"@type":"Answer","text":"Many parents bring their fussy infants to us specifically because of colic or reflux. We work on releasing tension in the upper spine and supporting nerve communication to the digestive system. Results vary by child."}},
+    {"@type":"Question","name":"Can chiropractic help with ear infections?","acceptedAnswer":{"@type":"Answer","text":"Parents often choose chiropractic care to support healthy drainage of the middle ear, particularly when ear infections are recurring. Chiropractic care is not a substitute for medical care of an active infection."}},
+    {"@type":"Question","name":"Can a chiropractor help support a breech baby?","acceptedAnswer":{"@type":"Answer","text":"The Webster Technique is a specific chiropractic analysis used during pregnancy to support pelvic balance and optimal fetal positioning. Care is given to the mother, with the goal of supporting natural positioning for the baby."}},
+    {"@type":"Question","name":"How often will my child need to come in?","acceptedAnswer":{"@type":"Answer","text":"That depends on what we find at the initial assessment and what you are hoping to address. We discuss a recommended schedule with you after the exam, and you are always in control of the care plan."}},
+    {"@type":"Question","name":"Does insurance cover pediatric chiropractic care?","acceptedAnswer":{"@type":"Answer","text":"Coverage varies by carrier and plan. Call us at (816) 895-1800 and we will help you confirm your coverage before your first visit."}},
+    {"@type":"Question","name":"What should I bring to my child's first appointment?","acceptedAnswer":{"@type":"Answer","text":"Bring your child's insurance information if applicable, a list of any current medications or concerns, and your child's pediatrician information. For infants, bring whatever helps keep them comfortable."}},
+    {"@type":"Question","name":"How will my child feel after their first adjustment?","acceptedAnswer":{"@type":"Answer","text":"Most children feel relaxed and unaffected, and many fall asleep during or after the visit. Some parents notice changes in sleep, mood, or digestion in the days that follow. Every child is different."}}
+  ]
+}
+</script>
+
+<script>document.querySelectorAll(".cur-year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+</body>
+</html>
