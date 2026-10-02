@@ -55,6 +55,8 @@
     .page-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(38px, 4.5vw, 60px); line-height: 1.08; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
     .page-hero h1 em { font-style: italic; color: #7EC4F4; }
     .page-hero-desc { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.72); font-weight: 300; margin: 0 auto; max-width: 540px; }
+    .page-hero-photo { max-width: 1000px; margin: 56px auto 0; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.35); position: relative; z-index: 1; aspect-ratio: 16/10; }
+    .page-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 
     /* DOCTOR SECTIONS */
     .doctor-section { padding: 100px 32px; }
@@ -103,6 +105,8 @@
     .together-section h2 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 3vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: var(--white); margin-bottom: 20px; }
     .together-section p { font-size: 17px; color: rgba(255,255,255,0.72); font-weight: 300; line-height: 1.75; }
     .together-section p + p { margin-top: 16px; }
+    .together-photo { margin-top: 32px; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.3); aspect-ratio: 1/1; max-width: 460px; }
+    .together-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; }
     .together-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 40px; }
     .together-card-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 24px; }
     .journey-steps { display: flex; flex-direction: column; gap: 0; }
@@ -112,6 +116,15 @@
     .journey-dot svg { width: 14px; height: 14px; color: #7EC4F4; }
     .journey-step-text strong { display: block; font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 2px; }
     .journey-step-text span { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+
+    /* FRONT DESK */
+    .frontdesk-section { background: var(--white); }
+    .frontdesk-header { text-align: center; max-width: 640px; margin: 0 auto 48px; }
+    .frontdesk-header .section-label { justify-content: center; }
+    .frontdesk-header p { font-size: 17px; color: var(--text-mid); font-weight: 300; line-height: 1.7; }
+    .frontdesk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 880px; margin: 0 auto; }
+    .frontdesk-photo { border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(13,36,72,0.14); aspect-ratio: 3/4; background: var(--blue-light); }
+    .frontdesk-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; }
 
     /* VALUES */
     .values-section { background: var(--cream); }
@@ -157,7 +170,10 @@
     @media (max-width: 900px) {
       .doctor-grid, .doctor-grid.reverse, .together-grid, .booking-grid { grid-template-columns: 1fr; gap: 48px; direction: ltr; }
       .values-grid { grid-template-columns: 1fr; }
+      .frontdesk-grid { grid-template-columns: 1fr; max-width: 420px; }
       .doctor-photo-card { aspect-ratio: 4/3; max-height: 360px; }
+      #dr-kristen .doctor-photo-wrap, #dr-greg .doctor-photo-wrap { max-width: 380px; margin: 0 auto; }
+      #dr-kristen .doctor-photo-card, #dr-greg .doctor-photo-card { aspect-ratio: 3/4; max-height: none; }
       .nav-links { display: none; }
       .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
       .footer-copy { text-align: center; }
@@ -203,6 +219,9 @@
     <h1>Meet the Doctors Behind<br><em>Essential Chiropractic</em></h1>
     <p class="page-hero-desc">Two board-certified chiropractors. One shared mission — to help every family in Lee's Summit experience the life-changing benefits of neurologically-based chiropractic care.</p>
   </div>
+  <div class="page-hero-photo">
+    <img src="Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(10).jpg" alt="The Essential Chiropractic team at our Lee's Summit, MO office">
+  </div>
 </div>
 
 <!-- DR. KRISTEN -->
@@ -211,7 +230,7 @@
     <div class="doctor-grid">
       <div class="doctor-photo-wrap">
         <div class="doctor-photo-card">
-          <img src="Dr_ K Headshot_JPG (1).avif" alt="Dr. Kristen Ras-Davis, Chiropractor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <img src="Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(12).jpg" alt="Dr. Kristen Ras-Davis, Chiropractor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="img-fallback" style="display:none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           </div>
@@ -267,7 +286,7 @@
     <div class="doctor-grid reverse">
       <div class="doctor-photo-wrap">
         <div class="doctor-photo-card">
-          <img src="Headshot.avif" alt="Dr. Greg Davis, Chiropractor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <img src="Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(9).jpg" alt="Dr. Greg Davis, Chiropractor" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
           <div class="img-fallback" style="display:none;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           </div>
@@ -328,6 +347,9 @@
         <p>After years of building their skills on opposite coasts — Dr. Kristen in Tennessee, Dr. Greg in New York — the two doctors got engaged and set out across the Midwest searching for a place to call home and start their practice together.</p>
         <p style="margin-top:16px;">After exploring multiple cities, the answer was clear. Kansas City, and more specifically Lee's Summit, just <em style="color:#7EC4F4;">felt like home</em>. The community, the energy, the opportunity to truly make a difference — it all aligned with the life and practice they had envisioned.</p>
         <p style="margin-top:16px;">Together, with combined experience, knowledge, and a shared passion for natural health, their goal is simple: to help every person and family in Lee's Summit achieve better health and a better quality of life through neurologically-based chiropractic care.</p>
+        <div class="together-photo">
+          <img src="Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(1).png" alt="Dr. Kristen Ras-Davis and Dr. Greg Davis with their daughter and dog at Essential Chiropractic in Lee's Summit" loading="lazy">
+        </div>
       </div>
       <div class="together-card">
         <div class="together-card-title">Their Journey Together</div>
@@ -369,6 +391,25 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRONT DESK TEAM -->
+<section class="frontdesk-section">
+  <div class="section-inner">
+    <div class="frontdesk-header">
+      <div class="section-label"><span></span>Our Front Desk Team</div>
+      <h2 class="section-title">Your First Smile at Essential Chiropractic</h2>
+      <p>Our front desk team is here to answer your calls, schedule your visits, and make every patient feel welcome.</p>
+    </div>
+    <div class="frontdesk-grid">
+      <div class="frontdesk-photo">
+        <img src="Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(6).jpg" alt="Essential Chiropractic front desk team member answering the phone at the reception desk" loading="lazy">
+      </div>
+      <div class="frontdesk-photo">
+        <img src="Photos/2026%20Office%20Photos/Chiropractor%20Lees%20Summit%20-%20Essential%20Chiropractic%20-%202026%20Office%20Photos%20(5).jpg" alt="Front desk team member scheduling appointments at Essential Chiropractic in Lee's Summit" loading="lazy">
       </div>
     </div>
   </div>
