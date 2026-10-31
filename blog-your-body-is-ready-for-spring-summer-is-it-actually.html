@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Body Is Ready for Spring &amp; Summer. Is It Actually? | Essential Chiropractic</title>
+  <meta name="description" content="How Essential Chiropractic helps Kansas City-area residents move better, feel stronger, and get the most out of the season — with chiropractic care, SoftWave…">
+  <link rel="canonical" href="https://www.essentialchiropracticls.com/blog-your-body-is-ready-for-spring-summer-is-it-actually">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-brand: #1E78D4;
+      --blue-deep:  #0D2448;
+      --blue-light: #E4F1FB;
+      --cream:      #F6F8FB;
+      --white:      #FFFFFF;
+      --text-dark:  #0D1A2E;
+      --text-mid:   #3A4A5E;
+      --text-light: #7A8899;
+      --gold:       #C8A96E;
+      --border:     #D0DFF0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text-dark); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1.1; text-decoration: none; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--blue-brand); }
+    .nav-cta { background: var(--blue-brand); color: var(--white) !important; padding: 10px 22px; border-radius: 6px; font-size: 14px !important; font-weight: 600 !important; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .nav-cta:hover { background: #1665B8 !important; transform: translateY(-1px); }
+    .nav-logo-img { height: 52px; width: auto; display: block; }
+    .nav-social { display: flex; align-items: center; gap: 8px; }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; text-decoration: none; transition: opacity 0.2s, transform 0.15s; flex-shrink: 0; }
+    .social-icon:hover { opacity: 0.65; transform: translateY(-1px); }
+    .social-fb, .social-ig { color: var(--blue-brand); }
+    footer .social-fb, footer .social-ig { color: #fff; }
+
+    /* ARTICLE HERO */
+    .article-hero { background: var(--blue-deep); padding: 130px 32px 70px; position: relative; overflow: hidden; }
+    .article-hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.18) 0%, transparent 70%); pointer-events: none; }
+    .article-hero-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; }
+    .breadcrumb { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: #7EC4F4; }
+    .article-tag { display: inline-block; background: var(--blue-brand); color: var(--white); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 12px; border-radius: 6px; margin-bottom: 20px; }
+    .article-hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 4vw, 50px); line-height: 1.12; letter-spacing: -0.02em; color: var(--white); margin-bottom: 24px; }
+    .article-byline { display: flex; align-items: center; gap: 14px; font-size: 14px; color: rgba(255,255,255,0.7); }
+    .article-byline .avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid rgba(255,255,255,0.2); }
+    .article-byline .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.4); }
+    .article-byline strong { color: var(--white); font-weight: 600; }
+
+    /* ARTICLE BODY */
+    .article-wrap { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+    .article-feature { margin: -48px auto 0; max-width: 824px; padding: 0 32px; position: relative; z-index: 2; }
+    .article-feature img { width: 100%; border-radius: 18px; box-shadow: 0 24px 64px rgba(13,36,72,0.18); display: block; aspect-ratio: 16/9; object-fit: cover; }
+    .article-feature figcaption { font-size: 13px; color: var(--text-light); text-align: center; margin-top: 12px; }
+
+    .article-body { padding: 56px 0 80px; }
+    .article-body .lead { font-size: 21px; line-height: 1.6; color: var(--text-dark); font-weight: 400; margin-bottom: 32px; }
+    .article-body p { font-size: 17px; line-height: 1.8; color: var(--text-mid); margin-bottom: 24px; }
+    .article-body p strong { color: var(--text-dark); font-weight: 600; }
+    .article-body h2 { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 1.2; letter-spacing: -0.01em; color: var(--blue-deep); margin: 48px 0 18px; }
+    .article-body h3 { font-size: 20px; font-weight: 600; color: var(--blue-deep); margin: 36px 0 12px; }
+    .article-body ul { list-style: none; margin: 0 0 24px; display: flex; flex-direction: column; gap: 12px; }
+    .article-body ul li { position: relative; padding-left: 32px; font-size: 17px; line-height: 1.7; color: var(--text-mid); }
+    .article-body ul li::before { content: ''; position: absolute; left: 0; top: 9px; width: 18px; height: 18px; border-radius: 50%; background: var(--blue-light); }
+    .article-body ul li::after { content: ''; position: absolute; left: 6px; top: 13px; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-brand); }
+    .article-body a.inline { color: var(--blue-brand); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+
+    .callout { background: var(--blue-light); border-left: 4px solid var(--blue-brand); border-radius: 0 12px 12px 0; padding: 24px 28px; margin: 36px 0; }
+    .callout p { font-size: 16px; color: var(--blue-deep); margin: 0; font-weight: 400; }
+    .callout strong { color: var(--blue-deep); }
+
+    /* AUTHOR / CTA */
+    .article-cta { background: var(--blue-deep); border-radius: 20px; padding: 44px 40px; text-align: center; position: relative; overflow: hidden; margin-bottom: 56px; }
+    .article-cta::before { content: ''; position: absolute; top: -60px; right: -40px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(30,120,212,0.22) 0%, transparent 70%); }
+    .article-cta-inner { position: relative; z-index: 1; }
+    .article-cta h2 { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 1.2; color: var(--white); margin-bottom: 12px; border: none; padding: 0; }
+    .article-cta p { font-size: 16px; color: rgba(255,255,255,0.72); font-weight: 300; line-height: 1.7; margin: 0 auto 26px; max-width: 460px; }
+    .cta-btn { display: inline-block; background: var(--blue-brand); color: var(--white); padding: 14px 32px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .cta-btn:hover { background: #1665B8; transform: translateY(-2px); }
+
+    .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--blue-brand); text-decoration: none; margin-bottom: 48px; }
+    .back-link svg { width: 16px; height: 16px; transition: transform 0.2s; }
+    .back-link:hover svg { transform: translateX(-4px); }
+
+    /* FOOTER */
+    footer { background: #060F1E; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { font-size: 12px; text-align: right; }
+    .footer-social { display: flex; gap: 10px; margin-top: 12px; }
+    .footer-logo-img { height: 46px; width: auto; display: block; margin-bottom: 6px; filter: brightness(0) invert(1); }
+
+    @media (max-width: 900px) { .nav-links { display: none; } .footer-inner { flex-direction: column; gap: 20px; text-align: center; } .footer-copy { text-align: center; } }
+    @media (max-width: 600px) {
+      .article-hero { padding: 104px 20px 60px; }
+      .article-feature, .article-wrap { padding: 0 20px; }
+      .article-body .lead { font-size: 19px; }
+      .article-body p, .article-body ul li { font-size: 16px; }
+    }
+      .nav-dropdown { position: relative; }
+    .nav-dropdown > .nav-dropdown-toggle { display: inline-flex; align-items: center; gap: 5px; padding: 26px 0; cursor: pointer; }
+    .nav-dropdown-toggle svg { width: 11px; height: 11px; transition: transform 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-toggle svg { transform: rotate(180deg); }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px); background: var(--white); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 16px 40px rgba(13,36,72,0.14); padding: 8px; list-style: none; min-width: 232px; opacity: 0; visibility: hidden; transition: opacity 0.2s, transform 0.2s, visibility 0.2s; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-dropdown-menu li { width: 100%; }
+    .nav-dropdown-menu a { display: block; padding: 9px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; color: var(--text-mid); white-space: nowrap; }
+    .nav-dropdown-menu a:hover { background: var(--cream); color: var(--blue-brand); }
+    .article-body figure.article-inline { margin: 32px 0; }
+    .article-body figure.article-inline img { max-width: 100%; max-height: 520px; width: auto; height: auto; border-radius: 14px; display: block; margin: 0 auto; }
+    .article-body ol { margin: 0 0 24px 22px; display: flex; flex-direction: column; gap: 12px; }
+    .article-body ol li { font-size: 17px; line-height: 1.7; color: var(--text-mid); padding-left: 6px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Your Body Is Ready for Spring & Summer. Is It Actually?",
+  "description": "How Essential Chiropractic helps Kansas City-area residents move better, feel stronger, and get the most out of the season — with chiropractic care, SoftWave…",
+  "datePublished": "2026-04-24T14:52:44.372Z",
+  "dateModified": "2026-04-24T15:12:19.396Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.essentialchiropracticls.com/blog-your-body-is-ready-for-spring-summer-is-it-actually"
+  },
+  "image": "https://www.essentialchiropracticls.com/Photos/blog/your-body-is-ready-for-spring-summer-is-it-actually.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Essential Chiropractic"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Essential Chiropractic",
+    "url": "https://www.essentialchiropracticls.com/"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="Photos/Essential%20Chiropractic%20-%20Chiropractor%20Lees%20Summit%20MO%20-%20Logo.png" alt="Essential Chiropractic" class="nav-logo-img"></a>
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle">Services <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"></path></svg></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="chiropractic.html">Chiropractic</a></li>
+          <li><a href="pediatric.html">Pediatric</a></li>
+          <li><a href="pregnancy.html">Pregnancy</a></li>
+          <li><a href="auto-accident.html">Auto Accident</a></li>
+          <li><a href="softwave.html">SoftWave</a></li>
+          <li><a href="neuropathy.html">Neuropathy</a></li>
+        </ul>
+      </li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#contact" class="nav-dropdown-toggle">Contact <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"></path></svg></a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="paperwork.html">Fill Out Your Forms Online</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#contact" class="nav-cta">Book Online</a></li>
+      <li class="nav-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb"><a href="blog.html">Blog</a> &nbsp;/&nbsp; Chiropractic</div>
+    <span class="article-tag">Chiropractic</span>
+    <h1>Your Body Is Ready for Spring &amp; Summer. Is It Actually?</h1>
+    <div class="article-byline">
+      <span>By <strong>Essential Chiropractic</strong></span>
+      <span class="dot"></span>
+      <span>April 24, 2026</span>
+      <span class="dot"></span>
+      <span>3 min read</span>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURE IMAGE -->
+<figure class="article-feature">
+  <img src="Photos/blog/your-body-is-ready-for-spring-summer-is-it-actually.jpg" alt="Your Body Is Ready for Spring &amp; Summer. Is It Actually?">
+</figure>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+  <div class="article-body">
+    <p class="lead">How Essential Chiropractic helps Kansas City-area residents move better, feel stronger, and get the most out of the season — with chiropractic care, SoftWave therapy, and neuropathy treatment.</p>
+
+    <p>The weather breaks in Lee's Summit and across the KC metro. You're back outside. Longer walks along the Greenway Trail, weekend trips to the Lake of the Ozarks, yard work, golf at one of the dozens of courses in the area, pickleball at Legacy Park — your activity level jumps overnight.</p>
+
+    <p>That's great. But for a lot of people, the body isn't ready for it.</p>
+
+    <p>Months of sitting more, moving less, and carrying tension add up. When the season flips, that's when the aches, strains, and nagging pain show up. At Essential Chiropractic in Lee's Summit, we see it every spring.</p>
+
+    <p>The good news: we can help — whether you're dealing with back pain, nerve issues, or just want to move and feel better before the season gets going.</p>
+
+    <h2>Winter Leaves a Mark on Your Body</h2>
+
+    <p>Cold months mean less movement. You sit more. You hunch over more. Muscles tighten, joints stiffen, posture takes a hit. For most people, it happens gradually — until they try to do something active and something doesn't feel right.</p>
+
+    <p>Common signs your body needs a reset:</p>
+
+    <ul>
+      <li><strong>Low back tightness</strong>— getting up from a chair feels stiffer than it used to</li>
+      <li><strong>Neck and shoulder tension</strong>— from months of desk work and screen time</li>
+      <li><strong>Reduced range of motion</strong>— can't turn, bend, or reach quite as freely</li>
+      <li><strong>Numbness, tingling, or burning in your feet or hands</strong>— this can be a sign of neuropathy that gets overlooked</li>
+      <li><strong>Fatigue that doesn't make sense</strong>— spinal misalignment affects how your whole system functions</li>
+    </ul>
+
+    <p>If any of these sound familiar, you're not alone. And you don't have to just push through it.</p>
+
+    <h2>Three Ways We Help at Essential Chiropractic</h2>
+
+    <p>We're not a one-size-fits-all clinic. Depending on what's going on, we use the right approach — or a combination of approaches — to get you feeling your best.</p>
+
+    <p><strong>Chiropractic Adjustments</strong>This is the foundation. Regular adjustments restore proper alignment to your spine and joints, which supports better nerve function, improved mobility, reduced inflammation, and faster recovery. If you've been sitting all winter or you're ramping up activity, this is where we start.</p>
+
+    <p><strong>SoftWave Therapy</strong>SoftWave is one of the most effective tools we have for stubborn pain, inflammation, and tissue damage. It uses electrohydraulic supersonic acoustic waves to stimulate healing at the cellular level — without surgery, injections, or downtime. Great for joint pain, tendon issues, and chronic problem areas that haven't responded to other treatments. Many of our Lee's Summit and Kansas City patients see results in just a few sessions.</p>
+
+    <p><strong>Neuropathy Treatment</strong>Peripheral neuropathy — nerve damage that causes burning, tingling, numbness, or weakness — is more common than most people realize. It often gets dismissed or mismanaged. We offer targeted neuropathy treatment that addresses the root cause, not just the symptoms. If you've been told "just live with it," come talk to us.</p>
+
+    <h2>Built for the Kansas City Active Lifestyle</h2>
+
+    <p>Different activities put different demands on your body. Here's how we help with the things KC-area residents actually do:</p>
+
+    <ul>
+      <li><strong>Hiking &amp; trail walking</strong>(Landahl Park, Swope Park, Longview Lake) — proper alignment reduces hip fatigue and ankle stress on uneven terrain</li>
+      <li><strong>Golf</strong>(there are 80+ courses in the KC metro) — rotational sports demand a healthy lumbar spine and proper shoulder mechanics</li>
+      <li><strong>Pickleball &amp; racquet sports</strong>— fast lateral movement stresses knees, hips, and shoulders; we help keep those joints healthy</li>
+      <li><strong>Cycling &amp; outdoor fitness</strong>— forward-leaning postures compress the neck and mid-back; regular care offsets that buildup</li>
+      <li><strong>Yard work &amp; gardening</strong>— bending, lifting, and kneeling for hours is hard on the low back; don't wait until you throw it out</li>
+      <li><strong>Travel</strong>(road trips, flights out of MCI) — long car and plane trips compress the spine; a pre-trip adjustment makes a real difference</li>
+    </ul>
+
+    <h2>What a Spring Tune-Up Looks Like</h2>
+
+    <p>You don't need to be in pain to benefit. Think of it like a tune-up before a road trip.</p>
+
+    <ol>
+      <li><strong>Initial assessment</strong>— we find where tension, restriction, or misalignment has built up</li>
+      <li><strong>A short care plan</strong>— usually a handful of visits to restore alignment and mobility</li>
+      <li><strong>Targeted therapy</strong>— SoftWave or neuropathy treatment if there's a specific issue to address</li>
+      <li><strong>Maintenance through summer</strong>— monthly or bi-monthly visits to stay ahead of problems as activity ramps up</li>
+    </ol>
+
+    <p>The patients who get the most out of the warm months don't wait until something breaks. They come in early, address what's building, and stay ahead of it.</p>
+
+    <h2>Serving Lee's Summit, Blue Springs, Raymore, Grandview, and the Greater Kansas City Area</h2>
+
+    <p>Essential Chiropractic is your local wellness destination in Lee's Summit, MO. Whether you're recovering from something, preparing for an active season, or dealing with nerve pain that's been slowing you down — we have the tools and the team to help.</p>
+
+    <p><strong>Book your spring assessment today and start the season feeling your best.</strong></p>
+
+    <p><em>Essential Chiropractic | Lee's Summit, MO | Serving the Greater Kansas City AreaChiropractic Care · SoftWave Therapy · Neuropathy Treatment</em></p>
+
+    <div class="article-cta">
+      <div class="article-cta-inner">
+        <h2>Ready to See What Chiropractic Can Do for You?</h2>
+        <p>Book a visit and we'll evaluate your situation, explain your options clearly, and tell you honestly whether we're a good fit.</p>
+        <a class="cta-btn" href="index.html#contact">Book Your First Visit</a>
+      </div>
+    </div>
+
+    <a class="back-link" href="blog.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+      Back to all articles
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div><img src="Photos/Essential%20Chiropractic%20-%20Chiropractor%20Lees%20Summit%20MO%20-%20Logo.png" alt="Essential Chiropractic" class="footer-logo-img"><div class="footer-social"><a href="https://www.facebook.com/EssentialChiropractic.LS/" target="_blank" rel="noopener" class="social-icon social-fb" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.instagram.com/essentialchiropractic.ls/" target="_blank" rel="noopener" class="social-icon social-ig" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div></div>
+    <ul class="footer-links">
+      <li><a href="chiropractic.html">Chiropractic</a></li>
+      <li><a href="pediatric.html">Pediatric</a></li>
+      <li><a href="pregnancy.html">Pregnancy</a></li>
+      <li><a href="auto-accident.html">Auto Accident</a></li>
+      <li><a href="softwave.html">SoftWave</a></li>
+      <li><a href="neuropathy.html">Neuropathy</a></li>
+      <li><a href="what-to-expect.html">What to Expect</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="paperwork.html">Patient Forms</a></li>
+    </ul>
+    <div class="footer-copy">
+      <div><a href="tel:+18168951800" style="color:inherit;text-decoration:none;">(816) 895-1800</a></div>
+      <div style="margin-top:4px;">© <span class="cur-year">2026</span> Essential Chiropractic. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.querySelectorAll(".cur-year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
+</body>
+</html>
