@@ -1,0 +1,58 @@
+/* Mobile nav menu + footer layout, shared by every page.
+   Loaded after each page's inline <style>, so equal-specificity rules here win. */
+
+.nav-toggle { display: none; }
+
+@media (max-width: 900px) {
+  nav .nav-inner { padding: 0 20px; gap: 16px; }
+
+  /* hamburger button (injected by mobile.js) */
+  .nav-toggle {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+    width: 44px; height: 44px; margin-left: auto; padding: 0;
+    background: none; border: 0; border-radius: 10px; cursor: pointer;
+    color: var(--blue-deep, #0D2448); -webkit-tap-highlight-color: transparent;
+  }
+  .nav-toggle:focus-visible { outline: 2px solid var(--blue-brand, #1E78D4); outline-offset: 2px; }
+  .nav-toggle span { display: block; width: 22px; height: 2px; background: currentColor; border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
+  nav.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  nav.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  nav.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* dropdown panel under the bar */
+  nav.nav-open .nav-links {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0;
+    position: absolute; top: 100%; left: 0; right: 0;
+    max-height: calc(100vh - 72px); max-height: calc(100dvh - 72px); overflow-y: auto;
+    padding: 8px 20px 24px; background: #fff;
+    border-bottom: 1px solid var(--border, #D0DFF0); box-shadow: 0 16px 32px rgba(13, 36, 72, 0.12);
+  }
+  nav.nav-open .nav-links > li { width: 100%; border-bottom: 1px solid var(--border, #D0DFF0); }
+  nav.nav-open .nav-links > li:last-child, nav.nav-open .nav-links > li:nth-last-child(2) { border-bottom: 0; }
+  nav.nav-open .nav-links > li > a:not(.social-icon) { display: block; padding: 12px 2px; font-size: 16px; }
+
+  /* Services / Contact: show the sub-links inline instead of on hover */
+  nav.nav-open .nav-dropdown > .nav-dropdown-toggle { padding: 12px 2px 4px; font-weight: 600; color: var(--blue-deep, #0D2448); }
+  nav.nav-open .nav-dropdown-toggle svg { display: none; }
+  nav.nav-open .nav-dropdown-menu {
+    position: static; transform: none; opacity: 1; visibility: visible; min-width: 0;
+    background: transparent; border: 0; box-shadow: none; padding: 0 0 6px 14px;
+  }
+  nav.nav-open .nav-dropdown-menu a { padding: 8px 8px; font-size: 15px; white-space: normal; }
+
+  nav.nav-open .nav-links > li > a.nav-cta { margin-top: 10px; padding: 13px 22px; text-align: center; font-size: 16px !important; }
+  nav.nav-open .nav-social { justify-content: center; padding-top: 10px; border-bottom: 0; }
+
+  /* let stacked grid columns shrink to the screen (the map iframe's 300px default width was holding them open) */
+  .contact-grid > * { min-width: 0; }
+  .map-embed { max-width: 100%; }
+  .contact-item-text, .contact-item-value, .contact-info a { min-width: 0; overflow-wrap: anywhere; } /* long email address */
+
+  /* footer: centered, links wrap instead of running off-screen */
+  footer { padding: 40px 20px; }
+  .footer-inner { align-items: center; }
+  .footer-logo-img { margin-left: auto; margin-right: auto; }
+  .footer-social { justify-content: center; }
+  .footer-links { flex-wrap: wrap; justify-content: center; gap: 14px 22px; }
+  .footer-links a { display: inline-block; padding: 4px 0; }
+}

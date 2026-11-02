@@ -337,10 +337,15 @@
     .footer-logo-name { font-family: 'DM Serif Display', serif; font-size: 20px; color: var(--white); display: block; margin-bottom: 6px; }
     .footer-logo-name span { color: var(--blue-brand); }
     .footer-logo-sub { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
-    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links { display: flex; gap: 28px; list-style: none; flex-wrap: wrap; }
     .footer-links a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; transition: color 0.2s; }
     .footer-links a:hover { color: var(--white); }
     .footer-copy { font-size: 12px; text-align: right; }
+
+    /* ── VISION ── */
+    .vision { background: var(--blue-deep); padding: 80px 32px; }
+    .vision-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .vision-card { padding: 40px; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
@@ -354,11 +359,14 @@
       .testimonials-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; gap: 48px; }
       .nav-links { display: none; }
+      .vision-grid { grid-template-columns: 1fr; gap: 40px; }
       .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
       .footer-copy { text-align: center; }
     }
     @media (max-width: 600px) {
       section { padding: 64px 20px; }
+      .vision { padding: 64px 20px; }
+      .vision-card { padding: 28px 24px; }
       .hero { padding: 100px 20px 64px; }
       .conditions-grid { grid-template-columns: 1fr; }
       .process-steps { grid-template-columns: 1fr; }
@@ -391,6 +399,8 @@
     .nav-dropdown-menu a { display: block; padding: 9px 14px; border-radius: 6px; font-size: 14px; font-weight: 500; color: var(--text-mid); white-space: nowrap; }
     .nav-dropdown-menu a:hover { background: var(--cream); color: var(--blue-brand); }
   </style>
+  <link rel="stylesheet" href="mobile.css">
+  <script src="mobile.js" defer></script>
 </head>
 <body>
 
@@ -560,14 +570,14 @@
 </section>
 
 <!-- MISSION + FEATURED TESTIMONIAL -->
-<section style="background: var(--blue-deep); padding: 80px 32px;">
-  <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+<section class="vision">
+  <div class="vision-grid">
     <div>
       <div style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-brand);margin-bottom:16px;"><span style="display:inline-block;width:20px;height:1px;background:var(--blue-brand);"></span>Our Vision</div>
       <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-.02em;color:#fff;margin-bottom:20px;">Building a Healthier Lee's Summit for Generations</h2>
       <p style="font-size:17px;color:rgba(255,255,255,.75);font-weight:300;line-height:1.75;">Our mission is to assist individuals and families in gaining victory in their health and having better lives through neurologically-based chiropractic care — building a healthier Lee's Summit community for generations to come.</p>
     </div>
-    <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:40px;">
+    <div class="vision-card" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;">
       <div style="display:flex;gap:3px;margin-bottom:20px;">
         <svg width="16" height="16" viewBox="0 0 24 24" style="fill:#C8A96E;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
         <svg width="16" height="16" viewBox="0 0 24 24" style="fill:#C8A96E;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -649,10 +659,10 @@
         <h2 class="section-title">Hours &amp;<br>Contact</h2>
         <table class="hours-table">
           <tbody>
-            <tr><td>Monday</td><td>10:00 AM – 1:00 PM &nbsp;|&nbsp; 3:00 – 6:00 PM</td></tr>
+            <tr><td>Monday</td><td>10:00 AM – 1:00 PM | 3:00 – 6:00 PM</td></tr>
             <tr><td>Tuesday</td><td>3:00 – 6:30 PM</td></tr>
-            <tr><td>Wednesday</td><td>10:00 AM – 1:00 PM &nbsp;|&nbsp; 3:00 – 6:00 PM</td></tr>
-            <tr><td>Thursday</td><td>10:00 AM – 1:00 PM &nbsp;|&nbsp; 3:00 – 6:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>10:00 AM – 1:00 PM | 3:00 – 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>10:00 AM – 1:00 PM | 3:00 – 6:00 PM</td></tr>
             <tr><td>Friday</td><td class="closed">Closed</td></tr>
             <tr><td>Saturday &amp; Sunday</td><td class="closed">Closed</td></tr>
           </tbody>
