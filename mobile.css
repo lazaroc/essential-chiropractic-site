@@ -56,3 +56,10 @@
   .footer-links { flex-wrap: wrap; justify-content: center; gap: 14px 22px; }
   .footer-links a { display: inline-block; padding: 4px 0; }
 }
+
+/* desktop footer: one row, 3 columns (logo | links | phone + legal); links wrap inside the middle column */
+@media (min-width: 901px) {
+  .footer-inner { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 48px; }
+  .footer-links { justify-content: center; gap: 10px 24px; }
+  .footer-copy { text-align: right; white-space: nowrap; }
+}
