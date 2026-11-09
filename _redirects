@@ -1,0 +1,45 @@
+# 301 redirects from the old Wix site (essentialchiropracticls.com) to the new pages.
+# Same mapping as URL_Redirects_Essential_Chiropractic.csv. Specific rules first, catch-alls last.
+
+/soft-wave /softwave 301
+/schedule-now / 301
+/neuropathy-consult /neuropathy 301
+/our-technique /chiropractic 301
+/about-1 /about 301
+/appointment-confirmed /paperwork 301
+/outreach /about 301
+/book-now-pediatric /pediatric 301
+/meet-the-doctors /about 301
+/shop / 301
+/about-us /about 301
+/connect / 301
+/book-now-pregnancy /pregnancy 301
+/fill-out-forms /paperwork 301
+/post/reducing-interventions-during-childbirth-with-the-support-of-chiropractic-care /blog-reducing-interventions-during-childbirth-with-the-support-of-chiropractic-care 301
+/post/what-s-making-us-unhealthy-and-how-can-chiropractic-help-1 /blog-what-s-making-us-unhealthy-and-how-can-chiropractic-help 301
+/post/can-neuropathy-be-reversed /blog-can-neuropathy-be-reversed 301
+/post/what-s-making-us-unhealthy-and-how-can-chiropractic-help /blog-what-s-making-us-unhealthy-and-how-can-chiropractic-help 301
+/post/chiropractic-care-for-all-ages /blog-chiropractic-care-for-all-ages 301
+/post/choosing-a-chiropractor-in-lee-s-summit-mo /blog-choosing-a-chiropractor-in-lee-s-summit-mo 301
+/post/can-chiropractic-help-with-fibromyalgia /blog-can-chiropractic-help-with-fibromyalgia 301
+/post/your-body-is-ready-for-spring-summer-is-it-actually /blog-your-body-is-ready-for-spring-summer-is-it-actually 301
+/post/consistency-in-chiropractic-care /blog-consistency-in-chiropractic-care 301
+/post/chiropractic-care-is-one-adjustment-enough /blog-chiropractic-care-is-one-adjustment-enough 301
+/post/why-should-we-all-assess-the-health-of-our-nervous-system-1 /blog-why-should-we-all-assess-the-health-of-our-nervous-system 301
+/post/can-i-get-chiropractic-care-after-surgery /blog-can-i-get-chiropractic-care-after-surgery 301
+/post/can-chiropractic-help-with-energy /blog-can-chiropractic-help-with-energy 301
+/post/what-can-retained-primitive-reflexes-mean-for-your-child-s-development /blog-what-can-retained-primitive-reflexes-mean-for-your-child-s-development 301
+/post/why-should-we-all-assess-the-health-of-our-nervous-system /blog-why-should-we-all-assess-the-health-of-our-nervous-system 301
+/post/can-chiropractic-help-with-insomnia /blog-can-chiropractic-help-with-insomnia 301
+/post/can-chiropractic-help-with-sinus-problems /blog-can-chiropractic-help-with-sinus-problems 301
+/post/does-everyone-get-chiropractic-adjustments-the-same-way /blog-does-everyone-get-chiropractic-adjustments-the-same-way 301
+/post/can-chiropractic-help-with-high-blood-pressure /blog-can-chiropractic-help-with-high-blood-pressure 301
+/post/should-i-consider-chiropractic-care-for-my-baby /blog-should-i-consider-chiropractic-care-for-my-baby 301
+/post/posture-matters-why-having-good-posture-is-important-and-how-chiropractic-can-help /blog-posture-matters-why-having-good-posture-is-important-and-how-chiropractic-can-help 301
+/post/chiropractic-and-ehlers-danlos-syndrome /blog-chiropractic-and-ehlers-danlos-syndrome 301
+/post/can-chiropractic-help-me-get-through-flu-season /blog-can-chiropractic-help-me-get-through-flu-season 301
+/blog-feed.xml /blog 301
+
+# catch-alls for old Wix blog URLs not listed above (page 2, categories, tags, unlisted posts)
+/post/* /blog 301
+/blog/* /blog 301
